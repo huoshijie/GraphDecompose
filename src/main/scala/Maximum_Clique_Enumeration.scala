@@ -2,13 +2,10 @@
 import scala.collection.mutable.ListBuffer
 import scala.util.control._
 class Maximum_Clique_Enumeration {
-
   def MCE(VertexCollect:ListBuffer[Long],EdgeCollection:ListBuffer[(Long,Long)]): Int ={
-
     val loop = new Breaks;
     var maxClq=0
     for (nodeId <- VertexCollect){
-
       var nodeIdNeighbor = ListBuffer[Long]()//存储当前节点的邻居节点
       for(edge <- EdgeCollection){
         val x=edge._1
@@ -20,10 +17,8 @@ class Maximum_Clique_Enumeration {
           nodeIdNeighbor.append(x)
         }
       }
-
 //      nodeIdNeighbor.copyToBuffer(nodeIdNeighborCopy)
       if (nodeIdNeighbor.size > maxClq-1) {
-
         loop.breakable {
           while (nodeIdNeighbor.size >= 0) {
 
