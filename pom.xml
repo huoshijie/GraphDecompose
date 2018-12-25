@@ -17,6 +17,7 @@
         <scala.version>2.10.6</scala.version>
         <spark.version>2.0.1</spark.version>
         <hadoop.version>2.6.4</hadoop.version>
+        <jdk.version>1.8</jdk.version>
         <scala.binary.version>2.11</scala.binary.version>
 
     </properties>
@@ -121,7 +122,6 @@
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>3.3</version>
                     <configuration>
-
                         <source>${jdk.version}</source>
                         <target>${jdk.version}</target>
                     </configuration>
