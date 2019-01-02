@@ -29,6 +29,7 @@ object GraphDecompose_GraphPartition_CliqueBK {
     println("最大度数是：",degree.map(_._2).max())
     println("平均度数是：",(degree.map(_._2).reduce(_+_)+0.0)/degree.count())
 
+    println("杰哥，你已经测试成功了")
     val neighbor = g.collectNeighborIds(EdgeDirection.Either).map{x=>
       (x._1,x._2.distinct)
     }
