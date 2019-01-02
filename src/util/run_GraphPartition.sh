@@ -12,7 +12,7 @@ in_put_dir="hdfs://10.1.14.20:9000/graph/${DataSet}"
 
 out_put_dir="hdfs://10.1.14.20:9000/graph/output/${outDir}"
 num_partition=$3
-glb_jar="./target/GraphDecompose-1.0-SNAPSHOT.jar"
+glb_jar="./target/GraphDecompose-1.0-SNAPSHOT-jar-with-dependencies.jar"
 
 /home/hadoop/program/spark-2.0.0-bin-hadoop2.4/bin/spark-submit  \
                     --driver-memory 10g \
