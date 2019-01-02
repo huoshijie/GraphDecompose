@@ -23,7 +23,7 @@ object GraphPartitionChange20180628 {
     val conf = new SparkConf().setMaster("spark://10.1.14.20:7077")
     val sparkSession = SparkSession.builder().appName("RDD to DataFrame").config(conf).getOrCreate()
     val sc = sparkSession.sparkContext
-    val g = GraphLoader.edgeListFile(sc,parm.inPutDir,numEdgePartitions = parm.num_partition)
+    val g = GraphLoader.edgeListFile(sc,parm.inPutDir,numEdgePartitions = 10)
     //    val g = GraphLoader.edgeListFile(sc,"D:\\shujuji\\graph\\facebook_combined.txt",numEdgePartitions = 1)
     //做文本预处理：
     //    sc.textFile(args(0)).filter(line =>line.isEmpty && line(0) != '#').map{line =>
@@ -361,8 +361,7 @@ object GraphPartitionChange20180628 {
 
   case class Config(
                      inPutDir: String = null,
-                     outPutDir: String = null,
-                     num_partition:Int = 10
+                     outPutDir: String = null
                    )
 
 
@@ -375,9 +374,6 @@ object GraphPartitionChange20180628 {
 
       opt[String]("out_put_dir").required().text("输出路径").
         action((x, c) => c.copy(outPutDir = x))
-
-      opt[Int]("num_partition").required().text("分区个数").
-        action((x, c) => c.copy(num_partition = x))
 
     }
     parser
