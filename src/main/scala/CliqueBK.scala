@@ -1,4 +1,6 @@
-
+import scala.collection.mutable
+import scala.collection.mutable.{ListBuffer, Map}
+import scala.util.Random
 
 class CliqueBK(neighbor:mutable.Map[Long,Array[Long]],clique:ListBuffer[Long], all:ListBuffer[ListBuffer[Long]] ) {
 

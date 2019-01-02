@@ -1,6 +1,5 @@
 import java.util.Random
 
-
 import org.apache.spark.SparkConf
 import org.apache.spark.graphx._
 import org.apache.spark.sql.{SaveMode, SparkSession}
@@ -58,7 +57,7 @@ object oneDepth__GraphPartitionChange20180101 {
     val graph:Graph[Int,Int] = g.outerJoinVertices(g.degrees) {
       case(vid,one,degree) => degree.getOrElse(0)
     }
-    graph.degrees.map(x=>GraphCollect(x._2)).toDF("subGraph_Length").write.mode(SaveMode.Overwrite).parquet(parm.outPutDir)
+//    graph.degrees.map(x=>GraphCollect(x._2)).toDF("subGraph_Length").write.mode(SaveMode.Overwrite).parquet(parm.outPutDir)
 
 
     //    println("单层图划分方法的最大规模是："+(g.degrees.reduce((a,b)=> if(a._2>b._2) a else b))._2)
