@@ -337,7 +337,7 @@ object GraphPartitionChange20180628 {
 
     println("一共找到了"+resultOne.size+"个团，应该和节点个数相同")
     println("去重后一共有"+resultOne.distinct.size+"个团")
-
+    println("杰哥，你已经测试成功了")
 //      .reduce((x,y)=>if (x>y) x else y)
 
 //    println(s"${parm.inPutDir}最大团规模是"+result)
