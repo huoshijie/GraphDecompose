@@ -17,6 +17,7 @@
         <spark.version>2.0.1</spark.version>
         <hadoop.version>2.6.4</hadoop.version>
         <scala.binary.version>2.11</scala.binary.version>
+        <plugin.version>2.5</plugin.version>
     </properties>
 
     <dependencies>
@@ -91,7 +92,24 @@
                     </execution>
                 </executions>
             </plugin>
- 
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-clean-plugin</artifactId>
+                <version>${plugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>auto-clean</id>
+                        <!-- clean生命周期clean阶段 -->
+                        <phase>clean</phase>
+                        <goals>
+                            <!-- 执行clean插件的clean目标 -->
+                            <goal>clean</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
