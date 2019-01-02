@@ -12,6 +12,7 @@
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
         <encoding>UTF-8</encoding>
+        <jdk.version>1.8</jdk.version>
         <scala.version>2.10.6</scala.version>
         <spark.version>2.0.1</spark.version>
         <hadoop.version>2.6.4</hadoop.version>
@@ -62,7 +63,6 @@
             <artifactId>scopt_2.10</artifactId>
             <version>3.2.0</version>
         </dependency>
-
 
 
     </dependencies>
@@ -118,6 +118,30 @@
                     </execution>
                 </executions>
             </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.10</version>
+                <configuration>
+                    <parallel>methods</parallel>
+                    <threadCount>10</threadCount>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.3</version>
+                <configuration>
+                    <source>${jdk.version}</source>
+                    <target>${jdk.version}</target>
+                </configuration>
+            </plugin>
+
+
+
+
         </plugins>
     </build>
 
