@@ -16,7 +16,7 @@ glb_jar="./target/GraphDecompose-1.0-SNAPSHOT-jar-with-dependencies.jar"
 
 /home/hadoop/program/spark-2.0.0-bin-hadoop2.4/bin/spark-submit  \
                     --driver-memory 10g \
-                    --executor-memory 20g \
+                    --executor-memory 25g \
                     --conf "spark.driver.maxResultSize=1000" \
                     --conf "spark.dynamicAllocation.enabled=true" \
                     --conf "spark.dynamicAllocation.minExecutors=5" \
@@ -24,7 +24,7 @@ glb_jar="./target/GraphDecompose-1.0-SNAPSHOT-jar-with-dependencies.jar"
                     --conf "spark.yarn.executor.memoryOverhead=3g" \
                     --conf "spark.executor.cores=2" \
                     --conf "spark.executor.memory=20g" \
-                    --class GraphPartitionChange20180628 \
+                    --class GraphDecompose_GraphPartition_CliqueBK \
                     ${glb_jar} \
                     --in_put_dir "${in_put_dir}" \
                     --out_put_dir "${out_put_dir}"

@@ -5,7 +5,6 @@ import scala.util.Random
 class CliqueBK(neighbor:mutable.Map[Long,Array[Long]],clique:ListBuffer[Long], all:ListBuffer[ListBuffer[Long]] ) {
 
   def cliqueBK(   SUBG:ListBuffer[Long], CAND:ListBuffer[Long]   ):Unit ={
-
     if (SUBG.size==0){
       val x = ListBuffer[Long]()
       clique.copyToBuffer(x)

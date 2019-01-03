@@ -11,24 +11,23 @@ import scala.collection.mutable
 import scala.collection.mutable.ListBuffer
 
 object GraphDecompose_GraphPartition_CliqueBK {
-  def run(): Unit ={
-//    parm:Config
+  def run(parm:Config): Unit ={
     var SubGraphStartTime = System.currentTimeMillis()
-//    val conf = new SparkConf().set("spark.driver.maxResultSize","20g").setAppName("GraphPartition").setMaster("spark://10.1.14.20:7077")
-    val conf = new SparkConf().setAppName("GraphPartition").setMaster("local[1]")
+    val conf = new SparkConf().set("spark.driver.maxResultSize","20g").setAppName("GraphPartition").setMaster("spark://10.1.14.20:7077")
+//     val conf = new SparkConf().setAppName("GraphPartition").setMaster("local[1]")
      //    val inPutDir = "/Users/didi/Downloads/GraphPartition/facebook.txt"
      //    val outPutDir = "/Users/didi/Downloads/GraphPartition/facebook"
      //    val conf = new SparkConf().set("spark.driver.maxResultSize","40g").setAppName("oneDepth__GraphPartitionChange20181120").setMaster("spark://10.1.14.20:7077")
     //    val conf = new SparkConf().set("spark.driver.maxResultSize","40g").setAppName("oneDepth__GraphPartitionChange20181120").setMaster("spark://10.1.14.20:7077")
     val sc = new SparkContext(conf)
-    val g = GraphLoader.edgeListFile(sc,"D:\\shujuji\\Toy.txt",numEdgePartitions = 10)
-//    val g = GraphLoader.edgeListFile(sc,parm.inPutDir,numEdgePartitions = 10)
+//    val g = GraphLoader.edgeListFile(sc,"D:\\shujuji\\karate.txt",numEdgePartitions = 10)
+    val g = GraphLoader.edgeListFile(sc,parm.inPutDir,numEdgePartitions = 10)
     //寻找核心节点
     val degree = g.degrees
 
     println("最大度数是：",degree.map(_._2).max())
     println("平均度数是：",(degree.map(_._2).reduce(_+_)+0.0)/degree.count())
-        
+
     val neighbor = g.collectNeighborIds(EdgeDirection.Either).map{x=>
       (x._1,x._2.distinct)
     }
@@ -171,24 +170,27 @@ object GraphDecompose_GraphPartition_CliqueBK {
 //      Del.append(bc.value(index))
 //    }
     var index = 0
-    val elem = bc.value(index)
+    var elem = bc.value(index)
     while (elem != x._1){
         Del.append(elem)
         index+=1
+        elem = bc.value(index)
     }
     val cliqueBK = new CliqueBK(neighbor,clique,all)
-//    cliqueBK.cliqueBK(SUBG,CAND.diff(Del))
-    cliqueBK.cliqueBK(SUBG,CAND)
+    cliqueBK.cliqueBK(SUBG,CAND.diff(Del))
+//    cliqueBK.cliqueBK(SUBG,CAND)
     all
 }.cache()
     val cliqueCount =  CliqueResult.count()
     println(cliqueCount)
     val all = CliqueResult.map(x=>x.sorted).collect().distinct
     println("---",all.toBuffer)
+
     println("极大团个数",all.size)
     println("最大团",all.map(_.size).max)
     println("大于3阶的团个数",all.filter(_.size>=3).size)
-//    CliqueResult.saveAsTextFile(parm.outPutDir)
+
+    //    CliqueResult.saveAsTextFile(parm.outPutDir)
     sc.stop()
   }
 
@@ -245,12 +247,12 @@ def GraphDecompose( CoreNodeCollect:ListBuffer[Long], result:Map[ VertexId,Array
 }
 
   def main(args: Array[String]): Unit = {
-//    val defaultParams = Config()
-//    val parser = getOptParser
-//    parser.parse(args, defaultParams) match {
-//      case Some(param) => run(param)
-//    }
-run()
+    val defaultParams = Config()
+    val parser = getOptParser
+    parser.parse(args, defaultParams) match {
+      case Some(param) => run(param)
+    }
+//run()
   }
 
   case class Config(
