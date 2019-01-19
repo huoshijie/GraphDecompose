@@ -4,14 +4,17 @@
 
 import org.apache.spark.{SparkConf, SparkContext}
 import org.apache.spark.graphx._
+import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.SparkSession
 import scopt.OptionParser
+
 import scala.collection
 import scala.collection.mutable
 import scala.collection.mutable.ListBuffer
 
 object GraphDecompose_GraphPartition_CliqueBK {
   def run(parm:Config): Unit ={
+//    parm:Config
     var SubGraphStartTime = System.currentTimeMillis()
     val conf = new SparkConf().set("spark.driver.maxResultSize","20g").setAppName("GraphPartition").setMaster("spark://10.1.14.20:7077")
 //     val conf = new SparkConf().setAppName("GraphPartition").setMaster("local[1]")
@@ -20,13 +23,30 @@ object GraphDecompose_GraphPartition_CliqueBK {
      //    val conf = new SparkConf().set("spark.driver.maxResultSize","40g").setAppName("oneDepth__GraphPartitionChange20181120").setMaster("spark://10.1.14.20:7077")
     //    val conf = new SparkConf().set("spark.driver.maxResultSize","40g").setAppName("oneDepth__GraphPartitionChange20181120").setMaster("spark://10.1.14.20:7077")
     val sc = new SparkContext(conf)
+
+    //D:\\shujuji\\graph\\5000B\\u0.8\\network.txt
+    //生成图
+
 //    val g = GraphLoader.edgeListFile(sc,"D:\\shujuji\\karate.txt",numEdgePartitions = 10)
-    val g = GraphLoader.edgeListFile(sc,parm.inPutDir,numEdgePartitions = 10)
+
+    //D:\\shujuji\\karate.txt
+    //D:\\shujuji\\dolphins\\dolphins.txt
+    //D:\\shujuji\\polbooks\\polbooks.txt
+    //D:\\shujuji\\football\\football.txt  CA-Hepth.txt
+    val edgesRDD = sc.textFile(parm.inPutDir).flatMap{
+      x=>
+      val field = x.split("\\s+")
+        Array(Edge(field(0).toLong, field(1).toLong, 1),Edge(field(1).toLong, field(0).toLong, 1))
+    }
+
+    val g  = Graph.fromEdges(edgesRDD,1).groupEdges((a,b)=>a)
+
+//    val g = GraphLoader.edgeListFile(sc,parm.inPutDir,numEdgePartitions = 10)
     //寻找核心节点
     val degree = g.degrees
-
-    println("最大度数是：",degree.map(_._2).max())
-    println("平均度数是：",(degree.map(_._2).reduce(_+_)+0.0)/degree.count())
+g
+//    println("最大度数是：",degree.map(_._2).max())
+//    println("平均度数是：",(degree.map(_._2).reduce(_+_)+0.0)/degree.count())
 
     val neighbor = g.collectNeighborIds(EdgeDirection.Either).map{x=>
       (x._1,x._2.distinct)
@@ -48,7 +68,7 @@ object GraphDecompose_GraphPartition_CliqueBK {
     val CoreNodeCollect = ListBuffer[Long]()
     val NodeCollect_degree = degreeSortCache.map(_._1).collect()
     GraphDecompose(CoreNodeCollect,result,NodeCollect_degree)
-    println("按照度的顺序排序的核心节点平均是",CoreNodeCollect)
+//    println("按照度的顺序排序的核心节点平均是",CoreNodeCollect)
     //    println()
     //将核心节点广播出去
     val bc = sc.broadcast(CoreNodeCollect)
@@ -180,20 +200,50 @@ object GraphDecompose_GraphPartition_CliqueBK {
     cliqueBK.cliqueBK(SUBG,CAND.diff(Del))
 //    cliqueBK.cliqueBK(SUBG,CAND)
     all
-}.cache()
-    val cliqueCount =  CliqueResult.count()
-    println(cliqueCount)
-    val all = CliqueResult.map(x=>x.sorted).collect().distinct
-    println("---",all.toBuffer)
-
-    println("极大团个数",all.size)
-    println("最大团",all.map(_.size).max)
-    println("大于3阶的团个数",all.filter(_.size>=3).size)
-
+}
+//  .cache()
+//    val cliqueCount =  CliqueResult.count()
+//    println(cliqueCount)
+//    val all = CliqueResult.map(x=>x.sorted).collect().distinct
+//    println("---",all.toBuffer)
+//
+//    println("极大团个数",all.size)
+//    println("最大团",all.map(_.size).max)
+//    println("大于3阶的团个数",all.filter(_.size>=3).size)
+//    Judge_If_On_One_Community(all,sc)//判断团中的节点是否在一个社区
     //    CliqueResult.saveAsTextFile(parm.outPutDir)
+    val NodeLabel = Clique_Label(CliqueResult)
+//    NodeLabel.foreach(println(_))
+    val graph_one = g.outerJoinVertices(NodeLabel){
+          case (vid,one,label) => label.getOrElse(vid)
+        }
+
+    val graph_two = g.mapVertices{
+      case(vid,attr)=>
+        vid
+    }
+    val LPA = new LabelPropagationAlgorithm()
+//        println("-------------")
+    var index = 1
+    val C_Li = ListBuffer[Double]()
+    val Li = ListBuffer[Double]()
+
+//    while(index<=10){
+//    C_Li.append(LPA.LabelPropagationAlgorithm(graph_one,sc,3))
+//    Li.append(LPA.LabelPropagationAlgorithm(graph_two,sc,3))
+//    index+=1
+//    }
+
+    while(index<=100){
+      println(index,LPA.PS_LabelPropagationAlgorithm(graph_two,sc,index))
+      Li.append(LPA.LabelPropagationAlgorithm(graph_two,sc,100))//原始异步LPA算法
+      C_Li.append(LPA.PS_LabelPropagationAlgorithm(graph_two,sc,100))//未加入团的异步LPA改进算法
+      index+=1
+    }
+    println("未加入团的异步LPA改进算法：","最大:",C_Li.max,"平均",C_Li.sum/C_Li.size)
+    println("原始异步LPA算法：","最大:",Li.max,"平均",Li.sum/Li.size)
     sc.stop()
   }
-
 //  def GraphDecompose(   CoreNodeCollect:ListBuffer[Long], result:Map[ VertexId,Array[VertexId] ], NodeCollect:Array[VertexId]   ): ListBuffer[Long] ={
 //    var CandateNode = ListBuffer[VertexId]()
 //    NodeCollect.toList.copyToBuffer(CandateNode)
@@ -214,6 +264,72 @@ object GraphDecompose_GraphPartition_CliqueBK {
 //    }
 //    return CoreNodeCollect
 //  }
+def Judge_If_On_One_Community(all:Array[ListBuffer[Long]],sc:SparkContext): Unit ={
+
+  // D:\shujuji\dolphins\dolphins_comm.txt
+  //D:\shujuji\polbooks\polbooks_comm.txt
+  //D:\\shujuji\\football\\football_comm.txt
+
+  val node2Label= sc.textFile("D:\\shujuji\\graph\\5000B\\u0.8\\community.txt").map{
+    x =>
+    val array =  x.split("\\s+")
+    val node = array(0).toLong
+    val label = array(1).toInt
+      (node,label)
+  }.collectAsMap()
+
+  var index = 2
+  while(index<=9){
+    var cut = 0.0
+    var realCnt = 0.0
+    for (clique <- all){
+      if (clique.size>=index){
+
+        cut+=1
+        val LabelListBuffer = ListBuffer[Int]()
+        for (node <- clique){
+          LabelListBuffer.append(node2Label(node))
+        }
+        if (LabelListBuffer.distinct.size ==1){realCnt+=1}
+      }
+    }
+    println(index+"阶团占比：",realCnt/cut)
+    index+=1
+  }
+
+
+
+}
+
+def Clique_Label(CliqueResult:RDD[ListBuffer[Long]]): RDD[(Long,Long)] ={
+
+  val Node2Label = CliqueResult.flatMap{
+    x=>
+      val temp = x.sorted
+      for (elem <- x) yield (elem,temp)
+  }
+//    Node2Label.groupByKey().map{
+//    x=>
+//      (x._1,x._2.toList.size,x._2.toList)
+//  }.foreach(println(_))
+
+    Node2Label.reduceByKey{
+    (a,b) =>
+      if (a.size>b.size) a else b
+  }.map{
+    x=>
+      val arr = x._2
+      if (arr.size>2){
+        (x._1,arr(0))
+      }
+      else
+        {
+          (x._1,x._1)
+        }
+  }
+
+}
+
 def GraphDecompose( CoreNodeCollect:ListBuffer[Long], result:Map[ VertexId,Array[VertexId] ], NodeCollect:Array[VertexId]): ListBuffer[Long] ={ //图分解的第二个版本
   var index = 0
   val LabelFlag = mutable.Map[VertexId,Int]()
@@ -247,12 +363,12 @@ def GraphDecompose( CoreNodeCollect:ListBuffer[Long], result:Map[ VertexId,Array
 }
 
   def main(args: Array[String]): Unit = {
-    val defaultParams = Config()
-    val parser = getOptParser
-    parser.parse(args, defaultParams) match {
-      case Some(param) => run(param)
-    }
-//run()
+//    val defaultParams = Config()
+//    val parser = getOptParser
+//    parser.parse(args, defaultParams) match {
+//      case Some(param) => run(param)
+//    }
+run()
   }
 
   case class Config(

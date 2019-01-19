@@ -6,7 +6,7 @@ import org.apache.spark.{SparkConf, SparkContext, rdd}
 import scopt.OptionParser
 import scala.collection.mutable.Map
 import scala.util.Random
-object LabelPropagationAlgorithm {
+class LabelPropagationAlgorithm {
 
   def ComputeModularity(result:Graph[VertexId,(Double,Double)],sc:SparkContext): Double ={
 
@@ -61,7 +61,28 @@ object LabelPropagationAlgorithm {
     Modularity
   }
 
-  def LabelPropagationAlgorithm(g:Graph[VertexId,(Double,Double)],sc:SparkContext,Iterations:Int): Unit ={
+  def PS_LabelPropagationAlgorithm(graph:Graph[VertexId,Int],sc:SparkContext,Iterations:Int): Double ={
+    val collectNeighborIds = graph.collectNeighborIds(EdgeDirection.Either)
+    val GraphDegreeNeighbor: Graph[(VertexId,Array[Long]),Int] = graph.outerJoinVertices(collectNeighborIds){
+      case (vid,label,neighbor) =>  (label,neighbor.getOrElse(Array[Long]()).distinct)
+    }
+    val g = GraphDegreeNeighbor.mapTriplets(triplet=>{
+      val srcDegree = triplet.srcAttr._2.size
+      val srcNeighbor = triplet.srcAttr._2
+      val dstDegree = triplet.dstAttr._2.size
+      val dstNeighbor = triplet.dstAttr._2
+      val commNeighborCount = srcNeighbor.intersect(dstNeighbor).size //公共节点个数
+      val Pij = (dstDegree-commNeighborCount-1)/srcDegree
+      val Close_ij = 1+commNeighborCount+0.2*Pij
+      val Pji = (srcDegree-commNeighborCount-1)/dstDegree
+      val Close_ji = 1+commNeighborCount+0.2*Pji
+      val attr = (Close_ij,Close_ji)//第一个向源节点发送，第二个向目的节点发送
+      attr
+    }).mapVertices{
+      case (vid,attr) =>
+        attr._1
+    }
+
     val result = g.pregel[  Array[(VertexId,VertexId,Double)]  ](Array((-1,-1,-1.0)),maxIterations = Iterations)(
       (id,Label,NewLabel) => {
         if (NewLabel.size == 1 & NewLabel(0)._1 == -1) {
@@ -98,46 +119,83 @@ object LabelPropagationAlgorithm {
         val dstInfo = triplet.attr._2
         val src = Array( (triplet.dstId,dstLabel,srcInfo) )
         val dst = Array( (triplet.srcId,srcLabel,dstInfo) )
-        Iterator( (triplet.srcId, src)  )
+
         Iterator( (triplet.dstId, dst)  )
+        Iterator( (triplet.srcId, src)  )
       },
       (a,b) => a++b
     )
-         println(ComputeModularity(result,sc))
+//    result.vertices.foreach(println(_))
+    ComputeModularity(result,sc)
   }
 
-  def main(args: Array[String]): Unit = {
+  def LabelPropagationAlgorithm(graph:Graph[VertexId,Int],sc:SparkContext,Iterations:Int): Double ={
 
-    val conf = new SparkConf().setAppName("LPA").setMaster("local")
-    val sc = new SparkContext(conf)
 
-    val path = "D:\\shujuji\\karate.txt"
-    var graph = GraphLoader.edgeListFile(sc,path,numEdgePartitions = 10)
+    val result = graph.pregel[  Array[(VertexId)]  ](Array(-1),maxIterations = Iterations)(
+      (id,Label,NewLabel) => {
+        if (NewLabel.size == 1 & NewLabel(0) == -1) {
+          Label
+        }
+        else { //标签传播算法
+          val map = Map[VertexId, Double]()
+          for (elem <- NewLabel.distinct) { //得到每一个标签出现的次数
+            val label = elem
+            if (map.contains(label) == false) {
+              map(label) = 1
+            }
+            else {
+              map(label) += 1
+            }
+          }
+          val maxLabelNum = map.values.toList.max
 
-    val collectNeighborIds = graph.collectNeighborIds(EdgeDirection.Either)
-
-    val GraphDegreeNeighbor: Graph[Array[Long],Int] = graph.outerJoinVertices(collectNeighborIds){
-      case (vid,defult,neighbor) =>  neighbor.getOrElse(Array[Long]()).distinct
-    }
-    val g = GraphDegreeNeighbor.mapTriplets(triplet=>{
-      val srcDegree = triplet.srcAttr.size
-      val srcNeighbor = triplet.srcAttr
-      val dstDegree = triplet.dstAttr.size
-      val dstNeighbor = triplet.dstAttr
-      val commNeighborCount = srcNeighbor.intersect(dstNeighbor).size //公共节点个数
-      val Pij = (dstDegree-commNeighborCount-1)/srcDegree
-      val Close_ij = 1+commNeighborCount+0.2*Pij
-      val Pji = (srcDegree-commNeighborCount-1)/dstDegree
-      val Close_ji = 1+commNeighborCount+0.2*Pji
-      val attr = (Close_ij,Close_ji)//第一个向源节点发送，第二个向目的节点发送
-      attr
-    }).mapVertices{
-      case (id,neighbor) =>
-        id //给顶点赋值标签
-    }
-
-    for (index <- 1 to 100){
-      LabelPropagationAlgorithm(g,sc,index)
-    }
+          Random.shuffle(map.filter(x => x._2 == maxLabelNum).keys.toList).take(1)(0) //从关系最紧密的社区中随机选择
+        }
+      },
+      triplet =>{
+        val dstLabel = triplet.dstAttr
+        val src = Array(dstLabel)
+        Iterator( (triplet.srcId, src)  )
+      },
+      (a,b) => a++b
+    )
+    //    result.vertices.foreach(println(_))
+    ComputeModularity(result.mapTriplets(triplets=>(-1.0,-1.0)),sc)
   }
+
+//  def main(args: Array[String]): Unit = {
+//
+//    val conf = new SparkConf().setAppName("LPA").setMaster("local")
+//    val sc = new SparkContext(conf)
+//
+//    val path = "D:\\shujuji\\karate.txt"
+//    var graph = GraphLoader.edgeListFile(sc,path,numEdgePartitions = 10)
+//
+////    val collectNeighborIds = graph.collectNeighborIds(EdgeDirection.Either)
+////
+////    val GraphDegreeNeighbor: Graph[Array[Long],Int] = graph.outerJoinVertices(collectNeighborIds){
+////      case (vid,defult,neighbor) =>  neighbor.getOrElse(Array[Long]()).distinct
+////    }
+////    val g = GraphDegreeNeighbor.mapTriplets(triplet=>{
+////      val srcDegree = triplet.srcAttr.size
+////      val srcNeighbor = triplet.srcAttr
+////      val dstDegree = triplet.dstAttr.size
+////      val dstNeighbor = triplet.dstAttr
+////      val commNeighborCount = srcNeighbor.intersect(dstNeighbor).size //公共节点个数
+////      val Pij = (dstDegree-commNeighborCount-1)/srcDegree
+////      val Close_ij = 1+commNeighborCount+0.2*Pij
+////      val Pji = (srcDegree-commNeighborCount-1)/dstDegree
+////      val Close_ji = 1+commNeighborCount+0.2*Pji
+////      val attr = (Close_ij,Close_ji)//第一个向源节点发送，第二个向目的节点发送
+////      attr
+////    }).mapVertices{
+////      case (id,neighbor) =>
+////        id //给顶点赋值标签
+////    }
+////
+////    for (index <- 1 to 100){
+////      LabelPropagationAlgorithm(g,sc,index)
+//    }
+//  }
 }
