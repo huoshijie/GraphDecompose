@@ -363,12 +363,12 @@ def GraphDecompose( CoreNodeCollect:ListBuffer[Long], result:Map[ VertexId,Array
 }
 
   def main(args: Array[String]): Unit = {
-//    val defaultParams = Config()
-//    val parser = getOptParser
-//    parser.parse(args, defaultParams) match {
-//      case Some(param) => run(param)
-//    }
-run()
+    val defaultParams = Config()
+    val parser = getOptParser
+    parser.parse(args, defaultParams) match {
+      case Some(param) => run(param)
+    }
+//run()
   }
 
   case class Config(

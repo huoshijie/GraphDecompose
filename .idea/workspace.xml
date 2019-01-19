@@ -2,89 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52f356ff-5e87-4d4e-a243-8fce26405952" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/CA-Grqc.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/CA-Hepth.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/PGP.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/dolphins.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/email.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/football.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/karate.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/polbooks.txt" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$$anon$1$$anonfun$16.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$$anon$1$$anonfun$17.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$$anonfun$11$$anonfun$12.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$$anonfun$15.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$$anonfun$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$$anonfun$7$$anonfun$apply$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$$anonfun$GraphDecompose$1$$anonfun$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$$anonfun$run$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$$anonfun$run$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$$anonfun$run$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$$anonfun$run$4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$$anonfun$run$5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/LabelPropagationAlgorithm$$anonfun$11$$anonfun$12.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/LabelPropagationAlgorithm$$anonfun$11$$anonfun$13.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/LabelPropagationAlgorithm$$anonfun$11$$anonfun$apply$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/LabelPropagationAlgorithm$$anonfun$11$$anonfun$apply$4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/LabelPropagationAlgorithm$$anonfun$15.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/LabelPropagationAlgorithm$$anonfun$16$$anonfun$apply$5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/LabelPropagationAlgorithm$$anonfun$16.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/LabelPropagationAlgorithm$$anonfun$main$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/LabelPropagationAlgorithm$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/Test_Case$$anonfun$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/Test_Case$$anonfun$main$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/Test_Case$$anonfun$main$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/Test_Case$$anonfun$main$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/Test_Case$$anonfun$main$4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/Test_Case$$anonfun$main$5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/Test_Case$$anonfun$main$6.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$$anon$1.class" afterPath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$$anon$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$$anonfun$10.class" afterPath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$$anonfun$10.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$$anonfun$11.class" afterPath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$$anonfun$11.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$$anonfun$13.class" afterPath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$$anonfun$13.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$$anonfun$14.class" afterPath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$$anonfun$14.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$$anonfun$2.class" afterPath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$$anonfun$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$$anonfun$4.class" afterPath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$$anonfun$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$$anonfun$5.class" afterPath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$$anonfun$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$$anonfun$6.class" afterPath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$$anonfun$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$$anonfun$7.class" afterPath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$$anonfun$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$$anonfun$8.class" afterPath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$$anonfun$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$$anonfun$9.class" afterPath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$$anonfun$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$$anonfun$GraphDecompose$1$$anonfun$apply$mcVJ$sp$1$$anonfun$apply$mcVJ$sp$2.class" afterPath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$$anonfun$GraphDecompose$1$$anonfun$apply$mcVJ$sp$1$$anonfun$apply$mcVJ$sp$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$$anonfun$GraphDecompose$1$$anonfun$apply$mcVJ$sp$1.class" afterPath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$$anonfun$GraphDecompose$1$$anonfun$apply$mcVJ$sp$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$$anonfun$GraphDecompose$1$$anonfun$apply$mcVJ$sp$3$$anonfun$apply$mcVJ$sp$4.class" afterPath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$$anonfun$GraphDecompose$1$$anonfun$apply$mcVJ$sp$3$$anonfun$apply$mcVJ$sp$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$$anonfun$GraphDecompose$1$$anonfun$apply$mcVJ$sp$3.class" afterPath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$$anonfun$GraphDecompose$1$$anonfun$apply$mcVJ$sp$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$$anonfun$GraphDecompose$1.class" afterPath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$$anonfun$GraphDecompose$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$.class" afterPath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$Config$.class" afterPath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$Config$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$Config.class" afterPath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK$Config.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK.class" afterPath="$PROJECT_DIR$/../GraphDecompose/target/classes/GraphDecompose_GraphPartition_CliqueBK.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/LabelPropagationAlgorithm$$anonfun$1.class" afterPath="$PROJECT_DIR$/../GraphDecompose/target/classes/LabelPropagationAlgorithm$$anonfun$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/LabelPropagationAlgorithm$$anonfun$10.class" afterPath="$PROJECT_DIR$/../GraphDecompose/target/classes/LabelPropagationAlgorithm$$anonfun$10.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/LabelPropagationAlgorithm$$anonfun$11$$anonfun$apply$3.class" afterPath="$PROJECT_DIR$/../GraphDecompose/target/classes/LabelPropagationAlgorithm$$anonfun$11$$anonfun$apply$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/LabelPropagationAlgorithm$$anonfun$11.class" afterPath="$PROJECT_DIR$/../GraphDecompose/target/classes/LabelPropagationAlgorithm$$anonfun$11.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/LabelPropagationAlgorithm$$anonfun$14.class" afterPath="$PROJECT_DIR$/../GraphDecompose/target/classes/LabelPropagationAlgorithm$$anonfun$14.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/LabelPropagationAlgorithm$$anonfun$17.class" afterPath="$PROJECT_DIR$/../GraphDecompose/target/classes/LabelPropagationAlgorithm$$anonfun$17.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/LabelPropagationAlgorithm$$anonfun$18.class" afterPath="$PROJECT_DIR$/../GraphDecompose/target/classes/LabelPropagationAlgorithm$$anonfun$18.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/LabelPropagationAlgorithm$$anonfun$2.class" afterPath="$PROJECT_DIR$/../GraphDecompose/target/classes/LabelPropagationAlgorithm$$anonfun$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/LabelPropagationAlgorithm$$anonfun$3.class" afterPath="$PROJECT_DIR$/../GraphDecompose/target/classes/LabelPropagationAlgorithm$$anonfun$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/LabelPropagationAlgorithm$$anonfun$4.class" afterPath="$PROJECT_DIR$/../GraphDecompose/target/classes/LabelPropagationAlgorithm$$anonfun$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/LabelPropagationAlgorithm$$anonfun$5.class" afterPath="$PROJECT_DIR$/../GraphDecompose/target/classes/LabelPropagationAlgorithm$$anonfun$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/LabelPropagationAlgorithm$$anonfun$6.class" afterPath="$PROJECT_DIR$/../GraphDecompose/target/classes/LabelPropagationAlgorithm$$anonfun$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/LabelPropagationAlgorithm$$anonfun$7.class" afterPath="$PROJECT_DIR$/../GraphDecompose/target/classes/LabelPropagationAlgorithm$$anonfun$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/LabelPropagationAlgorithm$$anonfun$8.class" afterPath="$PROJECT_DIR$/../GraphDecompose/target/classes/LabelPropagationAlgorithm$$anonfun$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/LabelPropagationAlgorithm$$anonfun$9$$anonfun$apply$1$$anonfun$apply$mcVJ$sp$1.class" afterPath="$PROJECT_DIR$/../GraphDecompose/target/classes/LabelPropagationAlgorithm$$anonfun$9$$anonfun$apply$1$$anonfun$apply$mcVJ$sp$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/LabelPropagationAlgorithm$$anonfun$9$$anonfun$apply$1.class" afterPath="$PROJECT_DIR$/../GraphDecompose/target/classes/LabelPropagationAlgorithm$$anonfun$9$$anonfun$apply$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/LabelPropagationAlgorithm$$anonfun$9.class" afterPath="$PROJECT_DIR$/../GraphDecompose/target/classes/LabelPropagationAlgorithm$$anonfun$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/LabelPropagationAlgorithm.class" afterPath="$PROJECT_DIR$/../GraphDecompose/target/classes/LabelPropagationAlgorithm.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/Test_Case$$anonfun$1.class" afterPath="$PROJECT_DIR$/../GraphDecompose/target/classes/Test_Case$$anonfun$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/Test_Case$.class" afterPath="$PROJECT_DIR$/../GraphDecompose/target/classes/Test_Case$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/target/classes/Test_Case.class" afterPath="$PROJECT_DIR$/../GraphDecompose/target/classes/Test_Case.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../GraphDecompose/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/src/main/scala/GraphDecompose_GraphPartition_CliqueBK.scala" afterPath="$PROJECT_DIR$/../GraphDecompose/src/main/scala/GraphDecompose_GraphPartition_CliqueBK.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/src/main/scala/LabelPropagationAlgorithm.scala" afterPath="$PROJECT_DIR$/../GraphDecompose/src/main/scala/LabelPropagationAlgorithm.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/src/main/scala/Test_Case.scala" afterPath="$PROJECT_DIR$/../GraphDecompose/src/main/scala/Test_Case.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/target/.scala_dependencies" afterPath="$PROJECT_DIR$/../GraphDecompose/target/.scala_dependencies" />
     </list>
     <ignored path="$PROJECT_DIR$/../GraphDecompose/out/" />
     <ignored path="$PROJECT_DIR$/../GraphDecompose/target/" />
@@ -101,15 +20,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GraphDecompose_GraphPartition_CliqueBK.scala" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GraphDecompose_GraphPartition_CliqueBK.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../GraphDecompose/src/main/scala/GraphDecompose_GraphPartition_CliqueBK.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="35" column="44" lean-forward="false" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
+            <state relative-caret-position="2608">
+              <caret line="372" column="0" lean-forward="true" selection-start-line="372" selection-start-column="0" selection-end-line="372" selection-end-column="0" />
               <folding>
                 <element signature="e#59#108#0" expanded="true" />
                 <element signature="e#632#716#0" expanded="false" />
                 <element signature="e#1246#1292#0" expanded="false" />
+                <element signature="e#1401#1426#0" expanded="false" />
                 <element signature="e#1835#1914#0" expanded="false" />
                 <element signature="e#1957#2003#0" expanded="false" />
                 <element signature="e#2456#2486#0" expanded="false" />
@@ -122,7 +42,6 @@
                 <element signature="e#9440#11081#0" expanded="false" />
                 <element signature="e#11083#11618#0" expanded="false" />
                 <element signature="e#11620#12713#0" expanded="false" />
-                <element signature="e#12757#12791#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -158,11 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="football.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="football.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../GraphDecompose/src/test/data/football.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
-              <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+              <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -821,7 +740,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="2" y="-11" width="1366" height="728" extended-state="1" />
+    <frame x="2" y="-11" width="1366" height="728" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -839,7 +758,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.49394855" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32924962" sideWeight="0.48175183" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09877489" sideWeight="0.48175183" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -876,6 +795,7 @@
             <element signature="e#59#108#0" expanded="true" />
             <element signature="e#632#716#0" expanded="false" />
             <element signature="e#1246#1292#0" expanded="false" />
+            <element signature="e#1401#1426#0" expanded="false" />
             <element signature="e#1835#1914#0" expanded="false" />
             <element signature="e#1957#2003#0" expanded="false" />
             <element signature="e#2456#2486#0" expanded="false" />
@@ -888,7 +808,6 @@
             <element signature="e#9440#11081#0" expanded="false" />
             <element signature="e#11083#11618#0" expanded="false" />
             <element signature="e#11620#12713#0" expanded="false" />
-            <element signature="e#12757#12791#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -926,6 +845,7 @@
             <element signature="e#59#108#0" expanded="true" />
             <element signature="e#632#716#0" expanded="false" />
             <element signature="e#1246#1292#0" expanded="false" />
+            <element signature="e#1401#1426#0" expanded="false" />
             <element signature="e#1835#1914#0" expanded="false" />
             <element signature="e#1957#2003#0" expanded="false" />
             <element signature="e#2456#2486#0" expanded="false" />
@@ -938,7 +858,6 @@
             <element signature="e#9440#11081#0" expanded="false" />
             <element signature="e#11083#11618#0" expanded="false" />
             <element signature="e#11620#12713#0" expanded="false" />
-            <element signature="e#12757#12791#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -987,6 +906,7 @@
             <element signature="e#59#108#0" expanded="true" />
             <element signature="e#632#716#0" expanded="false" />
             <element signature="e#1246#1292#0" expanded="false" />
+            <element signature="e#1401#1426#0" expanded="false" />
             <element signature="e#1835#1914#0" expanded="false" />
             <element signature="e#1957#2003#0" expanded="false" />
             <element signature="e#2456#2486#0" expanded="false" />
@@ -999,7 +919,6 @@
             <element signature="e#9440#11081#0" expanded="false" />
             <element signature="e#11083#11618#0" expanded="false" />
             <element signature="e#11620#12713#0" expanded="false" />
-            <element signature="e#12757#12791#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1048,6 +967,7 @@
             <element signature="e#59#108#0" expanded="true" />
             <element signature="e#632#716#0" expanded="false" />
             <element signature="e#1246#1292#0" expanded="false" />
+            <element signature="e#1401#1426#0" expanded="false" />
             <element signature="e#1835#1914#0" expanded="false" />
             <element signature="e#1957#2003#0" expanded="false" />
             <element signature="e#2456#2486#0" expanded="false" />
@@ -1060,7 +980,6 @@
             <element signature="e#9440#11081#0" expanded="false" />
             <element signature="e#11083#11618#0" expanded="false" />
             <element signature="e#11620#12713#0" expanded="false" />
-            <element signature="e#12757#12791#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1286,31 +1205,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../GraphDecompose/src/main/scala/GraphDecompose_GraphPartition_CliqueBK.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="35" column="44" lean-forward="false" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
-          <folding>
-            <element signature="e#59#108#0" expanded="true" />
-            <element signature="e#632#716#0" expanded="false" />
-            <element signature="e#1246#1292#0" expanded="false" />
-            <element signature="e#1835#1914#0" expanded="false" />
-            <element signature="e#1957#2003#0" expanded="false" />
-            <element signature="e#2456#2486#0" expanded="false" />
-            <element signature="e#3565#3584#0" expanded="false" />
-            <element signature="e#6381#6430#0" expanded="false" />
-            <element signature="e#7575#7626#0" expanded="false" />
-            <element signature="e#7966#7978#0" expanded="false" />
-            <element signature="e#8837#8860#0" expanded="false" />
-            <element signature="e#9440#9592#0" expanded="false" />
-            <element signature="e#9440#11081#0" expanded="false" />
-            <element signature="e#11083#11618#0" expanded="false" />
-            <element signature="e#11620#12713#0" expanded="false" />
-            <element signature="e#12757#12791#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../GraphDecompose/src/test/data/CA-Hepth.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1338,8 +1232,33 @@
     <entry file="file://$PROJECT_DIR$/../GraphDecompose/src/test/data/football.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../GraphDecompose/src/main/scala/GraphDecompose_GraphPartition_CliqueBK.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2608">
+          <caret line="372" column="0" lean-forward="true" selection-start-line="372" selection-start-column="0" selection-end-line="372" selection-end-column="0" />
+          <folding>
+            <element signature="e#59#108#0" expanded="true" />
+            <element signature="e#632#716#0" expanded="false" />
+            <element signature="e#1246#1292#0" expanded="false" />
+            <element signature="e#1401#1426#0" expanded="false" />
+            <element signature="e#1835#1914#0" expanded="false" />
+            <element signature="e#1957#2003#0" expanded="false" />
+            <element signature="e#2456#2486#0" expanded="false" />
+            <element signature="e#3565#3584#0" expanded="false" />
+            <element signature="e#6381#6430#0" expanded="false" />
+            <element signature="e#7575#7626#0" expanded="false" />
+            <element signature="e#7966#7978#0" expanded="false" />
+            <element signature="e#8837#8860#0" expanded="false" />
+            <element signature="e#9440#9592#0" expanded="false" />
+            <element signature="e#9440#11081#0" expanded="false" />
+            <element signature="e#11083#11618#0" expanded="false" />
+            <element signature="e#11620#12713#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
