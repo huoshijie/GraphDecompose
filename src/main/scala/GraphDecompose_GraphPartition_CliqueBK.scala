@@ -14,12 +14,8 @@ import scala.collection.mutable.ListBuffer
 
 object GraphDecompose_GraphPartition_CliqueBK {
 
-  def GetGraphData(parm:Config): Graph[Int,Int] ={
-    val conf = new SparkConf()
-      .set("spark.driver.maxResultSize","20g")
-      .setAppName("GraphPartition")
-      .setMaster("spark://10.1.14.20:7077")
-    val sc = new SparkContext(conf)
+  def GetGraphData(parm:Config,sc:SparkContext): Graph[Int,Int] ={
+
     val edgesRDD = sc.textFile(parm.inPutDir).flatMap{
       x=>
         val field = x.split("\\s+")
@@ -54,7 +50,7 @@ object GraphDecompose_GraphPartition_CliqueBK {
       .setAppName("GraphPartition")
       .setMaster("spark://10.1.14.20:7077")
     val sc = new SparkContext(conf)
-    val g  = GetGraphData(parm)
+    val g  = GetGraphData(parm,sc)
 
     val degree = g.degrees
 

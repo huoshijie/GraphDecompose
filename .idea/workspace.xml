@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52f356ff-5e87-4d4e-a243-8fce26405952" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../GraphDecompose/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/src/util/run_GraphDecompose_GraphPartition_CliqueBK.sh" afterPath="$PROJECT_DIR$/../GraphDecompose/src/util/run_GraphDecompose_GraphPartition_CliqueBK.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/src/main/scala/GraphDecompose_GraphPartition_CliqueBK.scala" afterPath="$PROJECT_DIR$/../GraphDecompose/src/main/scala/GraphDecompose_GraphPartition_CliqueBK.scala" />
     </list>
     <ignored path="$PROJECT_DIR$/../GraphDecompose/out/" />
     <ignored path="$PROJECT_DIR$/../GraphDecompose/target/" />
@@ -20,38 +19,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GraphDecompose_GraphPartition_CliqueBK.scala" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GraphDecompose_GraphPartition_CliqueBK.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../GraphDecompose/src/main/scala/GraphDecompose_GraphPartition_CliqueBK.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1751">
-              <caret line="94" column="13" lean-forward="true" selection-start-line="94" selection-start-column="13" selection-end-line="94" selection-end-column="13" />
+            <state relative-caret-position="340">
+              <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
               <folding>
                 <element signature="e#59#108#0" expanded="true" />
-                <element signature="e#2122#2168#0" expanded="false" />
-                <element signature="e#2621#2651#0" expanded="false" />
-                <element signature="e#3165#3214#0" expanded="false" />
-                <element signature="e#3991#4040#0" expanded="false" />
-                <element signature="e#5185#5236#0" expanded="false" />
-                <element signature="e#5576#5588#0" expanded="false" />
-                <element signature="e#6499#6522#0" expanded="false" />
-                <element signature="e#7494#7646#0" expanded="false" />
-                <element signature="e#7494#9135#0" expanded="false" />
-                <element signature="e#8359#8399#0" expanded="false" />
-                <element signature="e#9137#9672#0" expanded="false" />
-                <element signature="e#9674#10767#0" expanded="false" />
-                <element signature="e#10771#13205#0" expanded="false" />
-                <element signature="e#10893#10912#0" expanded="false" />
-                <element signature="e#13207#13410#0" expanded="false" />
-                <marker date="1552138847437" expanded="true" signature="13401:13410" ph="{...}" />
+                <element signature="e#771#788#0" expanded="false" />
+                <element signature="e#1524#1549#0" expanded="false" />
+                <element signature="e#1948#1994#0" expanded="false" />
+                <element signature="e#2447#2477#0" expanded="false" />
+                <element signature="e#2991#3040#0" expanded="false" />
+                <element signature="e#3817#3866#0" expanded="false" />
+                <element signature="e#5011#5062#0" expanded="false" />
+                <element signature="e#5402#5414#0" expanded="false" />
+                <element signature="e#6325#6348#0" expanded="false" />
+                <element signature="e#7320#7472#0" expanded="false" />
+                <element signature="e#7320#8961#0" expanded="false" />
+                <element signature="e#8185#8225#0" expanded="false" />
+                <element signature="e#8963#9498#0" expanded="false" />
+                <element signature="e#9500#10593#0" expanded="false" />
+                <element signature="e#10597#13031#0" expanded="false" />
+                <element signature="e#10719#10738#0" expanded="false" />
+                <element signature="e#13033#13236#0" expanded="false" />
+                <marker date="1552140272393" expanded="true" signature="13227:13236" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="run_GraphDecompose_GraphPartition_CliqueBK.sh" pinned="false" current-in-tab="true">
+      <file leaf-file-name="run_GraphDecompose_GraphPartition_CliqueBK.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../GraphDecompose/src/util/run_GraphDecompose_GraphPartition_CliqueBK.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
+            <state relative-caret-position="125">
               <caret line="23" column="50" lean-forward="false" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
               <folding />
             </state>
@@ -147,8 +148,8 @@
         <option value="$PROJECT_DIR$/../GraphDecompose/src/util/run_GraphPartition.sh" />
         <option value="$PROJECT_DIR$/../GraphDecompose/src/main/scala/Test_Case.scala" />
         <option value="$PROJECT_DIR$/../GraphDecompose/src/main/scala/LabelPropagationAlgorithm.scala" />
-        <option value="$PROJECT_DIR$/../GraphDecompose/src/main/scala/GraphDecompose_GraphPartition_CliqueBK.scala" />
         <option value="$PROJECT_DIR$/../GraphDecompose/src/util/run_GraphDecompose_GraphPartition_CliqueBK.sh" />
+        <option value="$PROJECT_DIR$/../GraphDecompose/src/main/scala/GraphDecompose_GraphPartition_CliqueBK.scala" />
       </list>
     </option>
   </component>
@@ -723,7 +724,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -764,19 +765,19 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/../GraphDecompose/src/main/scala/GraphDecompose_GraphPartition_CliqueBK.scala</url>
-          <line>83</line>
+          <line>79</line>
           <properties />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/../GraphDecompose/src/main/scala/GraphDecompose_GraphPartition_CliqueBK.scala</url>
-          <line>42</line>
+          <line>38</line>
           <properties />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/../GraphDecompose/src/main/scala/GraphDecompose_GraphPartition_CliqueBK.scala</url>
-          <line>35</line>
+          <line>31</line>
           <properties />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
@@ -807,22 +808,24 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#59#108#0" expanded="true" />
-            <element signature="e#2122#2168#0" expanded="false" />
-            <element signature="e#2621#2651#0" expanded="false" />
-            <element signature="e#3165#3214#0" expanded="false" />
-            <element signature="e#3991#4040#0" expanded="false" />
-            <element signature="e#5185#5236#0" expanded="false" />
-            <element signature="e#5576#5588#0" expanded="false" />
-            <element signature="e#6499#6522#0" expanded="false" />
-            <element signature="e#7494#7646#0" expanded="false" />
-            <element signature="e#7494#9135#0" expanded="false" />
-            <element signature="e#8359#8399#0" expanded="false" />
-            <element signature="e#9137#9672#0" expanded="false" />
-            <element signature="e#9674#10767#0" expanded="false" />
-            <element signature="e#10771#13205#0" expanded="false" />
-            <element signature="e#10893#10912#0" expanded="false" />
-            <element signature="e#13207#13410#0" expanded="false" />
-            <marker date="1552138847437" expanded="true" signature="13401:13410" ph="{...}" />
+            <element signature="e#771#788#0" expanded="false" />
+            <element signature="e#1524#1549#0" expanded="false" />
+            <element signature="e#1948#1994#0" expanded="false" />
+            <element signature="e#2447#2477#0" expanded="false" />
+            <element signature="e#2991#3040#0" expanded="false" />
+            <element signature="e#3817#3866#0" expanded="false" />
+            <element signature="e#5011#5062#0" expanded="false" />
+            <element signature="e#5402#5414#0" expanded="false" />
+            <element signature="e#6325#6348#0" expanded="false" />
+            <element signature="e#7320#7472#0" expanded="false" />
+            <element signature="e#7320#8961#0" expanded="false" />
+            <element signature="e#8185#8225#0" expanded="false" />
+            <element signature="e#8963#9498#0" expanded="false" />
+            <element signature="e#9500#10593#0" expanded="false" />
+            <element signature="e#10597#13031#0" expanded="false" />
+            <element signature="e#10719#10738#0" expanded="false" />
+            <element signature="e#13033#13236#0" expanded="false" />
+            <marker date="1552140272393" expanded="true" signature="13227:13236" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -854,22 +857,24 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#59#108#0" expanded="true" />
-            <element signature="e#2122#2168#0" expanded="false" />
-            <element signature="e#2621#2651#0" expanded="false" />
-            <element signature="e#3165#3214#0" expanded="false" />
-            <element signature="e#3991#4040#0" expanded="false" />
-            <element signature="e#5185#5236#0" expanded="false" />
-            <element signature="e#5576#5588#0" expanded="false" />
-            <element signature="e#6499#6522#0" expanded="false" />
-            <element signature="e#7494#7646#0" expanded="false" />
-            <element signature="e#7494#9135#0" expanded="false" />
-            <element signature="e#8359#8399#0" expanded="false" />
-            <element signature="e#9137#9672#0" expanded="false" />
-            <element signature="e#9674#10767#0" expanded="false" />
-            <element signature="e#10771#13205#0" expanded="false" />
-            <element signature="e#10893#10912#0" expanded="false" />
-            <element signature="e#13207#13410#0" expanded="false" />
-            <marker date="1552138847437" expanded="true" signature="13401:13410" ph="{...}" />
+            <element signature="e#771#788#0" expanded="false" />
+            <element signature="e#1524#1549#0" expanded="false" />
+            <element signature="e#1948#1994#0" expanded="false" />
+            <element signature="e#2447#2477#0" expanded="false" />
+            <element signature="e#2991#3040#0" expanded="false" />
+            <element signature="e#3817#3866#0" expanded="false" />
+            <element signature="e#5011#5062#0" expanded="false" />
+            <element signature="e#5402#5414#0" expanded="false" />
+            <element signature="e#6325#6348#0" expanded="false" />
+            <element signature="e#7320#7472#0" expanded="false" />
+            <element signature="e#7320#8961#0" expanded="false" />
+            <element signature="e#8185#8225#0" expanded="false" />
+            <element signature="e#8963#9498#0" expanded="false" />
+            <element signature="e#9500#10593#0" expanded="false" />
+            <element signature="e#10597#13031#0" expanded="false" />
+            <element signature="e#10719#10738#0" expanded="false" />
+            <element signature="e#13033#13236#0" expanded="false" />
+            <marker date="1552140272393" expanded="true" signature="13227:13236" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -911,22 +916,24 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#59#108#0" expanded="true" />
-            <element signature="e#2122#2168#0" expanded="false" />
-            <element signature="e#2621#2651#0" expanded="false" />
-            <element signature="e#3165#3214#0" expanded="false" />
-            <element signature="e#3991#4040#0" expanded="false" />
-            <element signature="e#5185#5236#0" expanded="false" />
-            <element signature="e#5576#5588#0" expanded="false" />
-            <element signature="e#6499#6522#0" expanded="false" />
-            <element signature="e#7494#7646#0" expanded="false" />
-            <element signature="e#7494#9135#0" expanded="false" />
-            <element signature="e#8359#8399#0" expanded="false" />
-            <element signature="e#9137#9672#0" expanded="false" />
-            <element signature="e#9674#10767#0" expanded="false" />
-            <element signature="e#10771#13205#0" expanded="false" />
-            <element signature="e#10893#10912#0" expanded="false" />
-            <element signature="e#13207#13410#0" expanded="false" />
-            <marker date="1552138847437" expanded="true" signature="13401:13410" ph="{...}" />
+            <element signature="e#771#788#0" expanded="false" />
+            <element signature="e#1524#1549#0" expanded="false" />
+            <element signature="e#1948#1994#0" expanded="false" />
+            <element signature="e#2447#2477#0" expanded="false" />
+            <element signature="e#2991#3040#0" expanded="false" />
+            <element signature="e#3817#3866#0" expanded="false" />
+            <element signature="e#5011#5062#0" expanded="false" />
+            <element signature="e#5402#5414#0" expanded="false" />
+            <element signature="e#6325#6348#0" expanded="false" />
+            <element signature="e#7320#7472#0" expanded="false" />
+            <element signature="e#7320#8961#0" expanded="false" />
+            <element signature="e#8185#8225#0" expanded="false" />
+            <element signature="e#8963#9498#0" expanded="false" />
+            <element signature="e#9500#10593#0" expanded="false" />
+            <element signature="e#10597#13031#0" expanded="false" />
+            <element signature="e#10719#10738#0" expanded="false" />
+            <element signature="e#13033#13236#0" expanded="false" />
+            <marker date="1552140272393" expanded="true" signature="13227:13236" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -968,22 +975,24 @@
           <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding>
             <element signature="e#59#108#0" expanded="true" />
-            <element signature="e#2122#2168#0" expanded="false" />
-            <element signature="e#2621#2651#0" expanded="false" />
-            <element signature="e#3165#3214#0" expanded="false" />
-            <element signature="e#3991#4040#0" expanded="false" />
-            <element signature="e#5185#5236#0" expanded="false" />
-            <element signature="e#5576#5588#0" expanded="false" />
-            <element signature="e#6499#6522#0" expanded="false" />
-            <element signature="e#7494#7646#0" expanded="false" />
-            <element signature="e#7494#9135#0" expanded="false" />
-            <element signature="e#8359#8399#0" expanded="false" />
-            <element signature="e#9137#9672#0" expanded="false" />
-            <element signature="e#9674#10767#0" expanded="false" />
-            <element signature="e#10771#13205#0" expanded="false" />
-            <element signature="e#10893#10912#0" expanded="false" />
-            <element signature="e#13207#13410#0" expanded="false" />
-            <marker date="1552138847437" expanded="true" signature="13401:13410" ph="{...}" />
+            <element signature="e#771#788#0" expanded="false" />
+            <element signature="e#1524#1549#0" expanded="false" />
+            <element signature="e#1948#1994#0" expanded="false" />
+            <element signature="e#2447#2477#0" expanded="false" />
+            <element signature="e#2991#3040#0" expanded="false" />
+            <element signature="e#3817#3866#0" expanded="false" />
+            <element signature="e#5011#5062#0" expanded="false" />
+            <element signature="e#5402#5414#0" expanded="false" />
+            <element signature="e#6325#6348#0" expanded="false" />
+            <element signature="e#7320#7472#0" expanded="false" />
+            <element signature="e#7320#8961#0" expanded="false" />
+            <element signature="e#8185#8225#0" expanded="false" />
+            <element signature="e#8963#9498#0" expanded="false" />
+            <element signature="e#9500#10593#0" expanded="false" />
+            <element signature="e#10597#13031#0" expanded="false" />
+            <element signature="e#10719#10738#0" expanded="false" />
+            <element signature="e#13033#13236#0" expanded="false" />
+            <marker date="1552140272393" expanded="true" signature="13227:13236" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1224,37 +1233,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../GraphDecompose/src/main/scala/GraphDecompose_GraphPartition_CliqueBK.scala">
+    <entry file="file://$PROJECT_DIR$/../GraphDecompose/src/util/run_GraphDecompose_GraphPartition_CliqueBK.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1751">
-          <caret line="94" column="13" lean-forward="true" selection-start-line="94" selection-start-column="13" selection-end-line="94" selection-end-column="13" />
-          <folding>
-            <element signature="e#59#108#0" expanded="true" />
-            <element signature="e#2122#2168#0" expanded="false" />
-            <element signature="e#2621#2651#0" expanded="false" />
-            <element signature="e#3165#3214#0" expanded="false" />
-            <element signature="e#3991#4040#0" expanded="false" />
-            <element signature="e#5185#5236#0" expanded="false" />
-            <element signature="e#5576#5588#0" expanded="false" />
-            <element signature="e#6499#6522#0" expanded="false" />
-            <element signature="e#7494#7646#0" expanded="false" />
-            <element signature="e#7494#9135#0" expanded="false" />
-            <element signature="e#8359#8399#0" expanded="false" />
-            <element signature="e#9137#9672#0" expanded="false" />
-            <element signature="e#9674#10767#0" expanded="false" />
-            <element signature="e#10771#13205#0" expanded="false" />
-            <element signature="e#10893#10912#0" expanded="false" />
-            <element signature="e#13207#13410#0" expanded="false" />
-            <marker date="1552138847437" expanded="true" signature="13401:13410" ph="{...}" />
-          </folding>
+        <state relative-caret-position="125">
+          <caret line="23" column="50" lean-forward="false" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../GraphDecompose/src/util/run_GraphDecompose_GraphPartition_CliqueBK.sh">
+    <entry file="file://$PROJECT_DIR$/../GraphDecompose/src/main/scala/GraphDecompose_GraphPartition_CliqueBK.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="23" column="50" lean-forward="false" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
-          <folding />
+        <state relative-caret-position="340">
+          <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding>
+            <element signature="e#59#108#0" expanded="true" />
+            <element signature="e#771#788#0" expanded="false" />
+            <element signature="e#1524#1549#0" expanded="false" />
+            <element signature="e#1948#1994#0" expanded="false" />
+            <element signature="e#2447#2477#0" expanded="false" />
+            <element signature="e#2991#3040#0" expanded="false" />
+            <element signature="e#3817#3866#0" expanded="false" />
+            <element signature="e#5011#5062#0" expanded="false" />
+            <element signature="e#5402#5414#0" expanded="false" />
+            <element signature="e#6325#6348#0" expanded="false" />
+            <element signature="e#7320#7472#0" expanded="false" />
+            <element signature="e#7320#8961#0" expanded="false" />
+            <element signature="e#8185#8225#0" expanded="false" />
+            <element signature="e#8963#9498#0" expanded="false" />
+            <element signature="e#9500#10593#0" expanded="false" />
+            <element signature="e#10597#13031#0" expanded="false" />
+            <element signature="e#10719#10738#0" expanded="false" />
+            <element signature="e#13033#13236#0" expanded="false" />
+            <marker date="1552140272393" expanded="true" signature="13227:13236" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
