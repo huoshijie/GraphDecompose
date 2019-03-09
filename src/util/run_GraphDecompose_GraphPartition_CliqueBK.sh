@@ -5,6 +5,9 @@ echo "${begin_time}"
 
 DataSet=$1
 outDir=$2
+iteration=$3
+index=$4
+
 echo "DataSet-----${DataSet}"
 echo "outDir-----${outDir}"
 
@@ -27,7 +30,9 @@ glb_jar="./target/GraphDecompose-1.0-SNAPSHOT-jar-with-dependencies.jar"
                     --class GraphDecompose_GraphPartition_CliqueBK \
                     ${glb_jar} \
                     --in_put_dir "${in_put_dir}" \
-                    --out_put_dir "${out_put_dir}"
+                    --out_put_dir "${out_put_dir}" \
+                    --iteration $iteration \
+                    --index $index
 
 if [ $? -ne 0 ]; then
     exit 1
