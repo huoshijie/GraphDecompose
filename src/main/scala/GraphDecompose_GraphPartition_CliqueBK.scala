@@ -13,16 +13,32 @@ import scala.collection.mutable
 import scala.collection.mutable.ListBuffer
 
 object GraphDecompose_GraphPartition_CliqueBK {
+
+  def GetGraphData(parm:Config): Graph[Int,Int] ={
+    val conf = new SparkConf()
+      .set("spark.driver.maxResultSize","20g")
+      .setAppName("GraphPartition")
+      .setMaster("spark://10.1.14.20:7077")
+    val sc = new SparkContext(conf)
+    val edgesRDD = sc.textFile(parm.inPutDir).flatMap{
+      x=>
+        val field = x.split("\\s+")
+        Array(Edge(field(0).toLong, field(1).toLong, 1),Edge(field(1).toLong, field(0).toLong, 1))
+    }
+
+    val g  = Graph.fromEdges(edgesRDD,1).groupEdges((a,b)=>a)
+    g
+  }
+
   def run(parm:Config): Unit ={
 //    parm:Config
-    var SubGraphStartTime = System.currentTimeMillis()
-    val conf = new SparkConf().set("spark.driver.maxResultSize","20g").setAppName("GraphPartition").setMaster("spark://10.1.14.20:7077")
+
 //     val conf = new SparkConf().setAppName("GraphPartition").setMaster("local[1]")
      //    val inPutDir = "/Users/didi/Downloads/GraphPartition/facebook.txt"
      //    val outPutDir = "/Users/didi/Downloads/GraphPartition/facebook"
      //    val conf = new SparkConf().set("spark.driver.maxResultSize","40g").setAppName("oneDepth__GraphPartitionChange20181120").setMaster("spark://10.1.14.20:7077")
     //    val conf = new SparkConf().set("spark.driver.maxResultSize","40g").setAppName("oneDepth__GraphPartitionChange20181120").setMaster("spark://10.1.14.20:7077")
-    val sc = new SparkContext(conf)
+
 
     //D:\\shujuji\\graph\\5000B\\u0.8\\network.txt
     //生成图
@@ -33,18 +49,15 @@ object GraphDecompose_GraphPartition_CliqueBK {
     //D:\\shujuji\\dolphins\\dolphins.txt
     //D:\\shujuji\\polbooks\\polbooks.txt
     //D:\\shujuji\\football\\football.txt  CA-Hepth.txt
-    val edgesRDD = sc.textFile(parm.inPutDir).flatMap{
-      x=>
-      val field = x.split("\\s+")
-        Array(Edge(field(0).toLong, field(1).toLong, 1),Edge(field(1).toLong, field(0).toLong, 1))
-    }
+    val conf = new SparkConf()
+      .set("spark.driver.maxResultSize","20g")
+      .setAppName("GraphPartition")
+      .setMaster("spark://10.1.14.20:7077")
+    val sc = new SparkContext(conf)
+    val g  = GetGraphData(parm)
 
-    val g  = Graph.fromEdges(edgesRDD,1).groupEdges((a,b)=>a)
-
-//    val g = GraphLoader.edgeListFile(sc,parm.inPutDir,numEdgePartitions = 10)
-    //寻找核心节点
     val degree = g.degrees
-g
+
 //    println("最大度数是：",degree.map(_._2).max())
 //    println("平均度数是：",(degree.map(_._2).reduce(_+_)+0.0)/degree.count())
 
@@ -83,68 +96,11 @@ g
           (attr,0)
         }
     }
-    //进行诱导子图求解
-    def edgeFunc(  triplet: EdgeContext[(Array[VertexId],Int), Int, mutable.Map[VertexId,Array[VertexId]]] ) {
-      //      //引入节点的偏序关系
-      //      val SrcPreOrder = ListBuffer[VertexId]()
-      //      val DstPreOrder = ListBuffer[VertexId]()
-      //
-      //      val srcId = triplet.srcId
-      //      val dstId = triplet.dstId
-      //      val srcIndex = CoreNodeCollect.indexOf(srcId)//在核心节点中的位置
-      //      val dstIndex = CoreNodeCollect.indexOf(dstId)
-      //
-      //      for(index <- 0 until srcIndex){ //源点的先序节点集合
-      //        SrcPreOrder.append(CoreNodeCollect(index))
-      //      }
-      //      for (index <- 0 until dstIndex){ //目的顶点的先序节点集合
-      //        DstPreOrder.append(CoreNodeCollect(index))
-      //      }
-      //
-      //      if(triplet.srcAttr._2 == 1 & triplet.dstAttr._2 == 1){
-      //
-      //        if (srcIndex>dstIndex){
-      //          val srcneighbor  = triplet.srcAttr._1
-      //          val dstneighbor  = triplet.dstAttr._1
-      //          var value = triplet.dstId +: srcneighbor.intersect(dstneighbor)
-      //          value = value.diff(DstPreOrder)//避免核心节点的先序节点出现
-      //
-      //          val key = triplet.srcId
-      //          triplet.sendToDst(mutable.Map[VertexId,Array[VertexId]](key->value))
-      //        }
-      //        else {
-      //          val srcneighbor  = triplet.srcAttr._1
-      //          val dstneighbor  = triplet.dstAttr._1
-      //          var value = triplet.srcId +: srcneighbor.intersect(dstneighbor)
-      //          value = value.diff(SrcPreOrder)//避免核心节点的先序节点出现
-      //
-      //          val key = triplet.dstId
-      //          triplet.sendToSrc(mutable.Map[VertexId,Array[VertexId]](key->value))
-      //        }
-      //      }
-      //
-      //      else
-      if (triplet.srcAttr._2 == 1){
-        val srcneighbor  = triplet.srcAttr._1
-        val dstneighbor  = triplet.dstAttr._1
-        var value = triplet.srcId +: srcneighbor.intersect(dstneighbor)
-        //        value = value.diff(SrcPreOrder)//避免核心节点的先序节点出现
-        val key = triplet.dstId
-        triplet.sendToSrc(mutable.Map[VertexId,Array[VertexId]](key->value))
-      }
-      if (triplet.dstAttr._2 == 1) {
-        val srcneighbor  = triplet.srcAttr._1
-        val dstneighbor  = triplet.dstAttr._1
-        var value = triplet.dstId +: srcneighbor.intersect(dstneighbor)
-        //        value = value.diff(DstPreOrder)//避免核心节点的先序节点出现
-        val key = triplet.srcId
-        triplet.sendToDst(mutable.Map[VertexId,Array[VertexId]](key->value))
-      }
-    }
+
     //graph就是每个点对应的子图
     val subGraph: VertexRDD[mutable.Map[VertexId,Array[VertexId]]] = graph.aggregateMessages(edgeFunc,(a,b)=>a++b)
 
-     val finallyResult = graph.outerJoinVertices(subGraph){
+    val finallyResult = graph.outerJoinVertices(subGraph){
       case (vid,(neighbor,flag),opt) =>
         val neighborMap = opt.getOrElse(mutable.Map[VertexId,Array[VertexId]]())
         neighborMap += (vid -> neighbor)
@@ -214,34 +170,50 @@ g
     //    CliqueResult.saveAsTextFile(parm.outPutDir)
     val NodeLabel = Clique_Label(CliqueResult)
 //    NodeLabel.foreach(println(_))
-    val graph_one = g.outerJoinVertices(NodeLabel){
+    val graph_with_clique = g.outerJoinVertices(NodeLabel){
           case (vid,one,label) => label.getOrElse(vid)
         }
 
-    val graph_two = g.mapVertices{
+    val graph_simple = g.mapVertices{
       case(vid,attr)=>
         vid
     }
     val LPA = new LabelPropagationAlgorithm()
 //        println("-------------")
     var index = 1
-    val C_Li = ListBuffer[Double]()
-    val Li = ListBuffer[Double]()
-
+    val PSLPA = ListBuffer[Double]()
+    val SLPA = ListBuffer[Double]()
+    val LSCNCDS = ListBuffer[Double]()
 //    while(index<=10){
 //    C_Li.append(LPA.LabelPropagationAlgorithm(graph_one,sc,3))
 //    Li.append(LPA.LabelPropagationAlgorithm(graph_two,sc,3))
 //    index+=1
 //    }
 
-    while(index<=100){
-      println(index,LPA.PS_LabelPropagationAlgorithm(graph_two,sc,index))
-      Li.append(LPA.LabelPropagationAlgorithm(graph_two,sc,100))//原始异步LPA算法
-      C_Li.append(LPA.PS_LabelPropagationAlgorithm(graph_two,sc,100))//未加入团的异步LPA改进算法
+    while(index<=parm.index){
+      println(index,LPA.PS_LabelPropagationAlgorithm(graph_simple,sc,index))
+      SLPA.append(LPA.LabelPropagationAlgorithm(graph_simple,sc,parm.iteration))//原始异步LPA算法
+      PSLPA.append(LPA.PS_LabelPropagationAlgorithm(graph_simple,sc,parm.iteration))//未加入团的异步LPA改进算法
+      LSCNCDS.append(LPA.PS_LabelPropagationAlgorithm(graph_with_clique,sc,parm.iteration))
       index+=1
     }
-    println("未加入团的异步LPA改进算法：","最大:",C_Li.max,"平均",C_Li.sum/C_Li.size)
-    println("原始异步LPA算法：","最大:",Li.max,"平均",Li.sum/Li.size)
+
+    println("SLPA：-------")
+    println("最小:",SLPA.min)
+    println("最大:",SLPA.max)
+    println("平均",SLPA.sum/SLPA.size)
+
+    println("PSLPA：-------")
+    println("最小:",PSLPA.min)
+    println("最大:",PSLPA.max)
+    println("平均",PSLPA.sum/PSLPA.size)
+
+    println("LSCNCDS：-------")
+    println("最小:",LSCNCDS.min)
+    println("最大:",LSCNCDS.max)
+    println("平均",LSCNCDS.sum/LSCNCDS.size)
+
+
     sc.stop()
   }
 //  def GraphDecompose(   CoreNodeCollect:ListBuffer[Long], result:Map[ VertexId,Array[VertexId] ], NodeCollect:Array[VertexId]   ): ListBuffer[Long] ={
@@ -362,7 +334,66 @@ def GraphDecompose( CoreNodeCollect:ListBuffer[Long], result:Map[ VertexId,Array
   CoreNodeCollect
 }
 
-  def main(args: Array[String]): Unit = {
+  //进行诱导子图求解
+def edgeFunc(  triplet: EdgeContext[(Array[VertexId],Int), Int, mutable.Map[VertexId,Array[VertexId]]] ) {
+    //      //引入节点的偏序关系
+    //      val SrcPreOrder = ListBuffer[VertexId]()
+    //      val DstPreOrder = ListBuffer[VertexId]()
+    //
+    //      val srcId = triplet.srcId
+    //      val dstId = triplet.dstId
+    //      val srcIndex = CoreNodeCollect.indexOf(srcId)//在核心节点中的位置
+    //      val dstIndex = CoreNodeCollect.indexOf(dstId)
+    //
+    //      for(index <- 0 until srcIndex){ //源点的先序节点集合
+    //        SrcPreOrder.append(CoreNodeCollect(index))
+    //      }
+    //      for (index <- 0 until dstIndex){ //目的顶点的先序节点集合
+    //        DstPreOrder.append(CoreNodeCollect(index))
+    //      }
+    //
+    //      if(triplet.srcAttr._2 == 1 & triplet.dstAttr._2 == 1){
+    //
+    //        if (srcIndex>dstIndex){
+    //          val srcneighbor  = triplet.srcAttr._1
+    //          val dstneighbor  = triplet.dstAttr._1
+    //          var value = triplet.dstId +: srcneighbor.intersect(dstneighbor)
+    //          value = value.diff(DstPreOrder)//避免核心节点的先序节点出现
+    //
+    //          val key = triplet.srcId
+    //          triplet.sendToDst(mutable.Map[VertexId,Array[VertexId]](key->value))
+    //        }
+    //        else {
+    //          val srcneighbor  = triplet.srcAttr._1
+    //          val dstneighbor  = triplet.dstAttr._1
+    //          var value = triplet.srcId +: srcneighbor.intersect(dstneighbor)
+    //          value = value.diff(SrcPreOrder)//避免核心节点的先序节点出现
+    //
+    //          val key = triplet.dstId
+    //          triplet.sendToSrc(mutable.Map[VertexId,Array[VertexId]](key->value))
+    //        }
+    //      }
+    //
+    //      else
+    if (triplet.srcAttr._2 == 1){
+      val srcneighbor  = triplet.srcAttr._1
+      val dstneighbor  = triplet.dstAttr._1
+      var value = triplet.srcId +: srcneighbor.intersect(dstneighbor)
+      //        value = value.diff(SrcPreOrder)//避免核心节点的先序节点出现
+      val key = triplet.dstId
+      triplet.sendToSrc(mutable.Map[VertexId,Array[VertexId]](key->value))
+    }
+    if (triplet.dstAttr._2 == 1) {
+      val srcneighbor  = triplet.srcAttr._1
+      val dstneighbor  = triplet.dstAttr._1
+      var value = triplet.dstId +: srcneighbor.intersect(dstneighbor)
+      //        value = value.diff(DstPreOrder)//避免核心节点的先序节点出现
+      val key = triplet.srcId
+      triplet.sendToDst(mutable.Map[VertexId,Array[VertexId]](key->value))
+    }
+  }
+
+def main(args: Array[String]): Unit = {
     val defaultParams = Config()
     val parser = getOptParser
     parser.parse(args, defaultParams) match {
@@ -371,12 +402,22 @@ def GraphDecompose( CoreNodeCollect:ListBuffer[Long], result:Map[ VertexId,Array
 //run()
   }
 
-  case class Config(
+case class Config(
                      inPutDir: String = null,
-                     outPutDir: String = null
-                   )
+                     outPutDir: String = null,
+                     iteration:Int = 0,
+                     index: Int = 100
+                   ){
+ override def toString:String =
+  s"""
+     |inPutDir:$inPutDir
+     |outPutDir:$outPutDir
+     |iteration:$iteration
+     |index:$index
+   """.stripMargin
+                  }
 
-  def getOptParser = {
+def getOptParser = {
     val parser = new OptionParser[Config]("generate driver feature order") {
       head("generate driver feature order")
       opt[String]("in_put_dir").required().text("输入路径").
@@ -384,6 +425,12 @@ def GraphDecompose( CoreNodeCollect:ListBuffer[Long], result:Map[ VertexId,Array
 
       opt[String]("out_put_dir").required().text("输出路径").
         action((x, c) => c.copy(outPutDir = x))
+
+      opt[Int]("iteration").required().text("迭代次数").
+        action((x, c) => c.copy(iteration = x))
+
+      opt[Int]("index").text("观察次数").
+        action((x, c) => c.copy(index = x))
     }
     parser
   }
