@@ -180,7 +180,8 @@ object GraphDecompose_GraphPartition_CliqueBK {
 
     var iteration = 1
 
-    while(iteration <=20){
+    println(parm.inPutDir+"数据集------------------------")
+    while(iteration <=parm.iteration){
       var index = 1
       val PSLPA = ListBuffer[Double]()
       val SLPA = ListBuffer[Double]()
@@ -198,6 +199,7 @@ object GraphDecompose_GraphPartition_CliqueBK {
       println("平均",PSLPA.sum/PSLPA.size)
       iteration+=1
     }
+    println()
 
 
 //    println("SLPA：-------")
