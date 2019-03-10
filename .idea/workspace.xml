@@ -4,7 +4,6 @@
     <list default="true" id="52f356ff-5e87-4d4e-a243-8fce26405952" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../GraphDecompose/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/src/main/scala/GraphDecompose_GraphPartition_CliqueBK.scala" afterPath="$PROJECT_DIR$/../GraphDecompose/src/main/scala/GraphDecompose_GraphPartition_CliqueBK.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/src/util/run_GraphDecompose_GraphPartition_CliqueBK.sh" afterPath="$PROJECT_DIR$/../GraphDecompose/src/util/run_GraphDecompose_GraphPartition_CliqueBK.sh" />
     </list>
     <ignored path="$PROJECT_DIR$/../GraphDecompose/out/" />
     <ignored path="$PROJECT_DIR$/../GraphDecompose/target/" />
@@ -21,11 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GraphDecompose_GraphPartition_CliqueBK.scala" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GraphDecompose_GraphPartition_CliqueBK.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../GraphDecompose/src/main/scala/GraphDecompose_GraphPartition_CliqueBK.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="22" column="20" lean-forward="false" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+            <state relative-caret-position="340">
+              <caret line="193" column="7" lean-forward="true" selection-start-line="193" selection-start-column="7" selection-end-line="193" selection-end-column="7" />
               <folding>
                 <element signature="e#59#108#0" expanded="true" />
                 <element signature="e#849#866#0" expanded="false" />
@@ -36,25 +35,27 @@
                 <element signature="e#3895#3944#0" expanded="false" />
                 <element signature="e#5089#5140#0" expanded="false" />
                 <element signature="e#5480#5492#0" expanded="false" />
-                <element signature="e#6403#6426#0" expanded="false" />
-                <element signature="e#7398#7550#0" expanded="false" />
-                <element signature="e#7398#9039#0" expanded="false" />
-                <element signature="e#8263#8303#0" expanded="false" />
-                <element signature="e#9041#9576#0" expanded="false" />
-                <element signature="e#9578#10671#0" expanded="false" />
-                <element signature="e#10675#13109#0" expanded="false" />
-                <element signature="e#10797#10816#0" expanded="false" />
-                <element signature="e#13111#13314#0" expanded="false" />
-                <marker date="1552186538129" expanded="true" signature="13305:13314" ph="{...}" />
+                <element signature="e#6511#6589#0" expanded="false" />
+                <element signature="e#6773#6789#0" expanded="false" />
+                <element signature="e#7097#7126#0" expanded="false" />
+                <element signature="e#7528#7680#0" expanded="false" />
+                <element signature="e#7528#9169#0" expanded="false" />
+                <element signature="e#8393#8433#0" expanded="false" />
+                <element signature="e#9171#9706#0" expanded="false" />
+                <element signature="e#9708#10801#0" expanded="false" />
+                <element signature="e#10805#13239#0" expanded="false" />
+                <element signature="e#10927#10946#0" expanded="false" />
+                <element signature="e#13241#13444#0" expanded="false" />
+                <marker date="1552187548063" expanded="true" signature="13435:13444" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="run_GraphDecompose_GraphPartition_CliqueBK.sh" pinned="false" current-in-tab="true">
+      <file leaf-file-name="run_GraphDecompose_GraphPartition_CliqueBK.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../GraphDecompose/src/util/run_GraphDecompose_GraphPartition_CliqueBK.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
+            <state relative-caret-position="594">
               <caret line="25" column="52" lean-forward="false" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
               <folding />
             </state>
@@ -726,7 +727,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -818,16 +819,18 @@
             <element signature="e#3895#3944#0" expanded="false" />
             <element signature="e#5089#5140#0" expanded="false" />
             <element signature="e#5480#5492#0" expanded="false" />
-            <element signature="e#6403#6426#0" expanded="false" />
-            <element signature="e#7398#7550#0" expanded="false" />
-            <element signature="e#7398#9039#0" expanded="false" />
-            <element signature="e#8263#8303#0" expanded="false" />
-            <element signature="e#9041#9576#0" expanded="false" />
-            <element signature="e#9578#10671#0" expanded="false" />
-            <element signature="e#10675#13109#0" expanded="false" />
-            <element signature="e#10797#10816#0" expanded="false" />
-            <element signature="e#13111#13314#0" expanded="false" />
-            <marker date="1552186538129" expanded="true" signature="13305:13314" ph="{...}" />
+            <element signature="e#6511#6589#0" expanded="false" />
+            <element signature="e#6773#6789#0" expanded="false" />
+            <element signature="e#7097#7126#0" expanded="false" />
+            <element signature="e#7528#7680#0" expanded="false" />
+            <element signature="e#7528#9169#0" expanded="false" />
+            <element signature="e#8393#8433#0" expanded="false" />
+            <element signature="e#9171#9706#0" expanded="false" />
+            <element signature="e#9708#10801#0" expanded="false" />
+            <element signature="e#10805#13239#0" expanded="false" />
+            <element signature="e#10927#10946#0" expanded="false" />
+            <element signature="e#13241#13444#0" expanded="false" />
+            <marker date="1552187548063" expanded="true" signature="13435:13444" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -867,16 +870,18 @@
             <element signature="e#3895#3944#0" expanded="false" />
             <element signature="e#5089#5140#0" expanded="false" />
             <element signature="e#5480#5492#0" expanded="false" />
-            <element signature="e#6403#6426#0" expanded="false" />
-            <element signature="e#7398#7550#0" expanded="false" />
-            <element signature="e#7398#9039#0" expanded="false" />
-            <element signature="e#8263#8303#0" expanded="false" />
-            <element signature="e#9041#9576#0" expanded="false" />
-            <element signature="e#9578#10671#0" expanded="false" />
-            <element signature="e#10675#13109#0" expanded="false" />
-            <element signature="e#10797#10816#0" expanded="false" />
-            <element signature="e#13111#13314#0" expanded="false" />
-            <marker date="1552186538129" expanded="true" signature="13305:13314" ph="{...}" />
+            <element signature="e#6511#6589#0" expanded="false" />
+            <element signature="e#6773#6789#0" expanded="false" />
+            <element signature="e#7097#7126#0" expanded="false" />
+            <element signature="e#7528#7680#0" expanded="false" />
+            <element signature="e#7528#9169#0" expanded="false" />
+            <element signature="e#8393#8433#0" expanded="false" />
+            <element signature="e#9171#9706#0" expanded="false" />
+            <element signature="e#9708#10801#0" expanded="false" />
+            <element signature="e#10805#13239#0" expanded="false" />
+            <element signature="e#10927#10946#0" expanded="false" />
+            <element signature="e#13241#13444#0" expanded="false" />
+            <marker date="1552187548063" expanded="true" signature="13435:13444" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -926,16 +931,18 @@
             <element signature="e#3895#3944#0" expanded="false" />
             <element signature="e#5089#5140#0" expanded="false" />
             <element signature="e#5480#5492#0" expanded="false" />
-            <element signature="e#6403#6426#0" expanded="false" />
-            <element signature="e#7398#7550#0" expanded="false" />
-            <element signature="e#7398#9039#0" expanded="false" />
-            <element signature="e#8263#8303#0" expanded="false" />
-            <element signature="e#9041#9576#0" expanded="false" />
-            <element signature="e#9578#10671#0" expanded="false" />
-            <element signature="e#10675#13109#0" expanded="false" />
-            <element signature="e#10797#10816#0" expanded="false" />
-            <element signature="e#13111#13314#0" expanded="false" />
-            <marker date="1552186538129" expanded="true" signature="13305:13314" ph="{...}" />
+            <element signature="e#6511#6589#0" expanded="false" />
+            <element signature="e#6773#6789#0" expanded="false" />
+            <element signature="e#7097#7126#0" expanded="false" />
+            <element signature="e#7528#7680#0" expanded="false" />
+            <element signature="e#7528#9169#0" expanded="false" />
+            <element signature="e#8393#8433#0" expanded="false" />
+            <element signature="e#9171#9706#0" expanded="false" />
+            <element signature="e#9708#10801#0" expanded="false" />
+            <element signature="e#10805#13239#0" expanded="false" />
+            <element signature="e#10927#10946#0" expanded="false" />
+            <element signature="e#13241#13444#0" expanded="false" />
+            <marker date="1552187548063" expanded="true" signature="13435:13444" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -985,16 +992,18 @@
             <element signature="e#3895#3944#0" expanded="false" />
             <element signature="e#5089#5140#0" expanded="false" />
             <element signature="e#5480#5492#0" expanded="false" />
-            <element signature="e#6403#6426#0" expanded="false" />
-            <element signature="e#7398#7550#0" expanded="false" />
-            <element signature="e#7398#9039#0" expanded="false" />
-            <element signature="e#8263#8303#0" expanded="false" />
-            <element signature="e#9041#9576#0" expanded="false" />
-            <element signature="e#9578#10671#0" expanded="false" />
-            <element signature="e#10675#13109#0" expanded="false" />
-            <element signature="e#10797#10816#0" expanded="false" />
-            <element signature="e#13111#13314#0" expanded="false" />
-            <marker date="1552186538129" expanded="true" signature="13305:13314" ph="{...}" />
+            <element signature="e#6511#6589#0" expanded="false" />
+            <element signature="e#6773#6789#0" expanded="false" />
+            <element signature="e#7097#7126#0" expanded="false" />
+            <element signature="e#7528#7680#0" expanded="false" />
+            <element signature="e#7528#9169#0" expanded="false" />
+            <element signature="e#8393#8433#0" expanded="false" />
+            <element signature="e#9171#9706#0" expanded="false" />
+            <element signature="e#9708#10801#0" expanded="false" />
+            <element signature="e#10805#13239#0" expanded="false" />
+            <element signature="e#10927#10946#0" expanded="false" />
+            <element signature="e#13241#13444#0" expanded="false" />
+            <marker date="1552187548063" expanded="true" signature="13435:13444" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1235,10 +1244,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../GraphDecompose/src/util/run_GraphDecompose_GraphPartition_CliqueBK.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="25" column="52" lean-forward="false" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../GraphDecompose/src/main/scala/GraphDecompose_GraphPartition_CliqueBK.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="22" column="20" lean-forward="false" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+        <state relative-caret-position="340">
+          <caret line="193" column="7" lean-forward="true" selection-start-line="193" selection-start-column="7" selection-end-line="193" selection-end-column="7" />
           <folding>
             <element signature="e#59#108#0" expanded="true" />
             <element signature="e#849#866#0" expanded="false" />
@@ -1249,25 +1266,19 @@
             <element signature="e#3895#3944#0" expanded="false" />
             <element signature="e#5089#5140#0" expanded="false" />
             <element signature="e#5480#5492#0" expanded="false" />
-            <element signature="e#6403#6426#0" expanded="false" />
-            <element signature="e#7398#7550#0" expanded="false" />
-            <element signature="e#7398#9039#0" expanded="false" />
-            <element signature="e#8263#8303#0" expanded="false" />
-            <element signature="e#9041#9576#0" expanded="false" />
-            <element signature="e#9578#10671#0" expanded="false" />
-            <element signature="e#10675#13109#0" expanded="false" />
-            <element signature="e#10797#10816#0" expanded="false" />
-            <element signature="e#13111#13314#0" expanded="false" />
-            <marker date="1552186538129" expanded="true" signature="13305:13314" ph="{...}" />
+            <element signature="e#6511#6589#0" expanded="false" />
+            <element signature="e#6773#6789#0" expanded="false" />
+            <element signature="e#7097#7126#0" expanded="false" />
+            <element signature="e#7528#7680#0" expanded="false" />
+            <element signature="e#7528#9169#0" expanded="false" />
+            <element signature="e#8393#8433#0" expanded="false" />
+            <element signature="e#9171#9706#0" expanded="false" />
+            <element signature="e#9708#10801#0" expanded="false" />
+            <element signature="e#10805#13239#0" expanded="false" />
+            <element signature="e#10927#10946#0" expanded="false" />
+            <element signature="e#13241#13444#0" expanded="false" />
+            <marker date="1552187548063" expanded="true" signature="13435:13444" ph="{...}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../GraphDecompose/src/util/run_GraphDecompose_GraphPartition_CliqueBK.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="25" column="52" lean-forward="false" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>

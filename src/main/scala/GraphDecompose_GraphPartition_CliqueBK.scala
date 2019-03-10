@@ -168,7 +168,7 @@ object GraphDecompose_GraphPartition_CliqueBK {
 //    NodeLabel.foreach(println(_))
     val graph_with_clique = g.outerJoinVertices(NodeLabel){
           case (vid,one,label) => label.getOrElse(vid)
-        }
+        }.cache()
 
     val graph_simple = g.mapVertices{
       case(vid,attr)=>
@@ -176,40 +176,44 @@ object GraphDecompose_GraphPartition_CliqueBK {
     }
     val LPA = new LabelPropagationAlgorithm()
 //        println("-------------")
-    var index = 1
-    val PSLPA = ListBuffer[Double]()
-    val SLPA = ListBuffer[Double]()
-    val LSCNCDS = ListBuffer[Double]()
-//    while(index<=10){
-//    C_Li.append(LPA.LabelPropagationAlgorithm(graph_one,sc,3))
-//    Li.append(LPA.LabelPropagationAlgorithm(graph_two,sc,3))
-//    index+=1
-//    }
 
-    while(index<=parm.index){
-      println(index,LPA.PS_LabelPropagationAlgorithm(graph_simple,sc,index))
-      SLPA.append(LPA.LabelPropagationAlgorithm(graph_simple,sc,parm.iteration))//原始异步LPA算法
-      PSLPA.append(LPA.PS_LabelPropagationAlgorithm(graph_simple,sc,parm.iteration))//未加入团的异步LPA改进算法
-      LSCNCDS.append(LPA.PS_LabelPropagationAlgorithm(graph_with_clique,sc,parm.iteration))
-      index+=1
+
+    var iteration = 1
+
+    while(iteration <=20){
+      var index = 1
+      val PSLPA = ListBuffer[Double]()
+      val SLPA = ListBuffer[Double]()
+      val LSCNCDS = ListBuffer[Double]()
+      while(index<=parm.index){
+        //      println(index,LPA.PS_LabelPropagationAlgorithm(graph_simple,sc,index))
+        //      SLPA.append(LPA.LabelPropagationAlgorithm(graph_simple,sc,parm.iteration))//原始异步LPA算法
+        PSLPA.append(LPA.PS_LabelPropagationAlgorithm(graph_simple,sc,iteration))//未加入团的异步LPA改进算法
+        //      LSCNCDS.append(LPA.PS_LabelPropagationAlgorithm(graph_with_clique,sc,parm.iteration))
+        index+=1
+      }
+      println(s"PSLPA：-------${iteration}地迭代的结果")
+      println("最小:",PSLPA.min)
+      println("最大:",PSLPA.max)
+      println("平均",PSLPA.sum/PSLPA.size)
+      iteration+=1
     }
 
-    println("SLPA：-------")
-    println("最小:",SLPA.min)
-    println("最大:",SLPA.max)
-    println("平均",SLPA.sum/SLPA.size)
 
-    println("PSLPA：-------")
-    println("最小:",PSLPA.min)
-    println("最大:",PSLPA.max)
-    println("平均",PSLPA.sum/PSLPA.size)
-
-    println("LSCNCDS：-------")
-    println("最小:",LSCNCDS.min)
-    println("最大:",LSCNCDS.max)
-    println("平均",LSCNCDS.sum/LSCNCDS.size)
-
-
+//    println("SLPA：-------")
+//    println("最小:",SLPA.min)
+//    println("最大:",SLPA.max)
+//    println("平均",SLPA.sum/SLPA.size)
+//
+//    println("PSLPA：-------")
+//    println("最小:",PSLPA.min)
+//    println("最大:",PSLPA.max)
+//    println("平均",PSLPA.sum/PSLPA.size)
+//
+//    println("LSCNCDS：-------")
+//    println("最小:",LSCNCDS.min)
+//    println("最大:",LSCNCDS.max)
+//    println("平均",LSCNCDS.sum/LSCNCDS.size)
     sc.stop()
   }
 //  def GraphDecompose(   CoreNodeCollect:ListBuffer[Long], result:Map[ VertexId,Array[VertexId] ], NodeCollect:Array[VertexId]   ): ListBuffer[Long] ={
