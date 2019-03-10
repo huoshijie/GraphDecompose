@@ -20,6 +20,7 @@ glb_jar="./target/GraphDecompose-1.0-SNAPSHOT-jar-with-dependencies.jar"
 /home/hadoop/program/spark-2.0.0-bin-hadoop2.4/bin/spark-submit  \
                     --driver-memory 10g \
                     --executor-memory 25g \
+                    --num-executors 5 \
                     --conf "spark.yarn.executor.memoryOverhead=3g" \
                     --conf "spark.executor.cores=1" \
                     --conf "spark.executor.memory=20g" \

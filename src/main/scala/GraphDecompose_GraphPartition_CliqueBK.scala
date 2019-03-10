@@ -20,7 +20,7 @@ object GraphDecompose_GraphPartition_CliqueBK {
       x=>
         val field = x.split("\\s+")
         Array(Edge(field(0).toLong, field(1).toLong, 1),Edge(field(1).toLong, field(0).toLong, 1))
-    }
+    }.repartition(5)
 
     val g  = Graph.fromEdges(edgesRDD,1).groupEdges((a,b)=>a)
     g
