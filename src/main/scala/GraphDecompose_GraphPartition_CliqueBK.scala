@@ -16,7 +16,7 @@ object GraphDecompose_GraphPartition_CliqueBK {
 
   def GetGraphData(parm:Config,sc:SparkContext): Graph[Int,Int] ={
 
-    val edgesRDD = sc.textFile(parm.inPutDir).flatMap{
+    val edgesRDD = sc.textFile(parm.inPutDir).filter(line => !line.isEmpty && line.split("\\s+")(0) != "#").flatMap{
       x=>
         val field = x.split("\\s+")
         Array(Edge(field(0).toLong, field(1).toLong, 1),Edge(field(1).toLong, field(0).toLong, 1))
