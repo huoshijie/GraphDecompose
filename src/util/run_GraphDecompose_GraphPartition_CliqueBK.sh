@@ -23,7 +23,7 @@ glb_jar="./target/GraphDecompose-1.0-SNAPSHOT-jar-with-dependencies.jar"
                     --num-executors 5 \
                     --conf "spark.yarn.executor.memoryOverhead=3g" \
                     --conf "spark.executor.cores=1" \
-                    --conf "spark.executor.memory=20g" \
+                    --conf "spark.executor.memory=25g" \
                     --class GraphDecompose_GraphPartition_CliqueBK \
                     ${glb_jar} \
                     --in_put_dir "${in_put_dir}" \
