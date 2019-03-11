@@ -168,18 +168,15 @@ object GraphDecompose_GraphPartition_CliqueBK {
 //    NodeLabel.foreach(println(_))
     val graph_with_clique = g.outerJoinVertices(NodeLabel){
           case (vid,one,label) => label.getOrElse(vid)
-        }
+        }.cache()
 
     val graph_simple = g.mapVertices{
       case(vid,attr)=>
         vid
-    }.cache()
+    }
     val LPA = new LabelPropagationAlgorithm()
 //        println("-------------")
-
-
     var iteration = 1
-
     println(parm.inPutDir+"数据集------------------------")
     while(iteration <=parm.iteration){
       var index = 1
@@ -188,24 +185,31 @@ object GraphDecompose_GraphPartition_CliqueBK {
       val LSCNCDS = ListBuffer[Double]()
       while(index<=parm.index){
         //      println(index,LPA.PS_LabelPropagationAlgorithm(graph_simple,sc,index))
-        val result = LPA.LabelPropagationAlgorithm(graph_simple,sc,iteration)
-        val modularity = LPA.ComputeModularity(result,sc)
-        SLPA.append(modularity)//原始异步LPA算法
-
+//        val result = LPA.LabelPropagationAlgorithm(graph_simple,sc,iteration)
+//        val modularity = LPA.ComputeModularity(result,sc)
+//        SLPA.append(modularity)//原始异步LPA算法
 //        val result = LPA.PS_LabelPropagationAlgorithm(graph_simple,sc,iteration)
 //        val modularity = LPA.ComputeModularity(result,sc)
 //        PSLPA.append(modularity)//未加入团的异步LPA改进算法
-        //      LSCNCDS.append(LPA.PS_LabelPropagationAlgorithm(graph_with_clique,sc,parm.iteration))
+        val result = LPA.PS_LabelPropagationAlgorithm(graph_with_clique,sc,iteration)
+        val modularity = LPA.ComputeModularity(result,sc)
+        LSCNCDS.append(modularity)
         index+=1
       }
 //      println(s"PSLPA：-------${iteration}地迭代的结果")
 //      println("最小:",PSLPA.min)
 //      println("最大:",PSLPA.max)
 //      println("平均",PSLPA.sum/PSLPA.size)
-      println(s"SLPA：-------${iteration}地迭代的结果")
-      println("最小:",SLPA.min)
-      println("最大:",SLPA.max)
-      println("平均",SLPA.sum/SLPA.size)
+
+//      println(s"SLPA：-------${iteration}地迭代的结果")
+//      println("最小:",SLPA.min)
+//      println("最大:",SLPA.max)
+//      println("平均",SLPA.sum/SLPA.size)
+//      iteration+=1
+      println(s"LSCNCDS：-------${iteration}地迭代的结果")
+      println("最小:",LSCNCDS.min)
+      println("最大:",LSCNCDS.max)
+      println("平均",LSCNCDS.sum/LSCNCDS.size)
       iteration+=1
     }
     println()
