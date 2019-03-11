@@ -174,7 +174,7 @@ class LabelPropagationAlgorithm {
         (label,vid)
     }.groupByKey().mapValues(_.toList).collect()
     val CB = algorithm_partition.size //算法划分类别
-    val real_partiton = sc.textFile(real_partition_path).map{
+    val real_partiton = sc.textFile(realPartitionPath).map{
       x=>
         val arr = x.split("\\s+")
         val vid = arr(0).toLong
