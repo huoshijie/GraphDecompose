@@ -2,190 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52f356ff-5e87-4d4e-a243-8fce26405952" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000B/u0.1/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000B/u0.1/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000B/u0.1/statistics.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000B/u0.15/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000B/u0.15/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000B/u0.15/statistics.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000B/u0.2/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000B/u0.2/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000B/u0.2/statistics.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000B/u0.25/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000B/u0.25/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000B/u0.25/statistics.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000B/u0.3/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000B/u0.3/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000B/u0.3/statistics.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000B/u0.35/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000B/u0.35/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000B/u0.35/statistics.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000B/u0.4/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000B/u0.4/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000B/u0.4/statistics.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000B/u0.45/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000B/u0.45/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000B/u0.45/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000B/u0.5/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000B/u0.5/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000B/u0.5/statistics.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000B/u0.55/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000B/u0.55/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000B/u0.55/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000B/u0.6/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000B/u0.6/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000B/u0.6/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000B/u0.65/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000B/u0.65/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000B/u0.65/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000B/u0.7/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000B/u0.7/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000B/u0.7/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000B/u0.75/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000B/u0.75/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000B/u0.75/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000B/u0.8/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000B/u0.8/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000B/u0.8/statistics.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000S/u0.1/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000S/u0.1/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000S/u0.1/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000S/u0.15/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000S/u0.15/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000S/u0.15/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000S/u0.2/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000S/u0.2/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000S/u0.2/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000S/u0.25/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000S/u0.25/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000S/u0.25/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000S/u0.3/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000S/u0.3/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000S/u0.3/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000S/u0.35/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000S/u0.35/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000S/u0.35/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000S/u0.4/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000S/u0.4/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000S/u0.4/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000S/u0.45/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000S/u0.45/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000S/u0.45/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000S/u0.5/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000S/u0.5/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000S/u0.5/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000S/u0.55/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000S/u0.55/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000S/u0.55/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000S/u0.6/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000S/u0.6/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000S/u0.6/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000S/u0.65/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000S/u0.65/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000S/u0.65/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000S/u0.7/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000S/u0.7/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000S/u0.7/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000S/u0.75/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000S/u0.75/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000S/u0.75/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000S/u0.8/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000S/u0.8/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/2000S/u0.8/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000B/u0.1/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000B/u0.1/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000B/u0.1/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000B/u0.15/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000B/u0.15/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000B/u0.15/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000B/u0.2/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000B/u0.2/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000B/u0.2/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000B/u0.25/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000B/u0.25/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000B/u0.25/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000B/u0.3/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000B/u0.3/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000B/u0.3/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000B/u0.35/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000B/u0.35/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000B/u0.35/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000B/u0.4/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000B/u0.4/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000B/u0.4/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000B/u0.45/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000B/u0.45/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000B/u0.45/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000B/u0.5/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000B/u0.5/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000B/u0.5/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000B/u0.55/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000B/u0.55/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000B/u0.55/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000B/u0.6/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000B/u0.6/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000B/u0.6/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000B/u0.65/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000B/u0.65/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000B/u0.65/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000B/u0.7/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000B/u0.7/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000B/u0.7/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000B/u0.75/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000B/u0.75/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000B/u0.75/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000B/u0.8/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000B/u0.8/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000B/u0.8/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000S/u0.1/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000S/u0.1/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000S/u0.1/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000S/u0.15/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000S/u0.15/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000S/u0.15/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000S/u0.2/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000S/u0.2/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000S/u0.2/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000S/u0.25/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000S/u0.25/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000S/u0.25/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000S/u0.3/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000S/u0.3/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000S/u0.3/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000S/u0.35/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000S/u0.35/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000S/u0.35/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000S/u0.4/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000S/u0.4/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000S/u0.4/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000S/u0.45/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000S/u0.45/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000S/u0.45/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000S/u0.5/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000S/u0.5/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000S/u0.5/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000S/u0.55/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000S/u0.55/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000S/u0.55/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000S/u0.6/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000S/u0.6/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000S/u0.6/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000S/u0.65/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000S/u0.65/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000S/u0.65/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000S/u0.7/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000S/u0.7/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000S/u0.7/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000S/u0.75/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000S/u0.75/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000S/u0.75/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000S/u0.8/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000S/u0.8/network.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/5000S/u0.8/statistics.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/test/data/netscience.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GraphDecompose/src/util/run_all.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../GraphDecompose/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/src/main/scala/GraphDecompose_GraphPartition_CliqueBK.scala" afterPath="$PROJECT_DIR$/../GraphDecompose/src/main/scala/GraphDecompose_GraphPartition_CliqueBK.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/src/main/scala/LabelPropagationAlgorithm.scala" afterPath="$PROJECT_DIR$/../GraphDecompose/src/main/scala/LabelPropagationAlgorithm.scala" />
     </list>
     <ignored path="$PROJECT_DIR$/../GraphDecompose/out/" />
     <ignored path="$PROJECT_DIR$/../GraphDecompose/target/" />
@@ -202,37 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GraphDecompose_GraphPartition_CliqueBK.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../GraphDecompose/src/main/scala/GraphDecompose_GraphPartition_CliqueBK.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="195" column="24" lean-forward="true" selection-start-line="195" selection-start-column="24" selection-end-line="195" selection-end-column="24" />
-              <folding>
-                <element signature="e#59#108#0" expanded="true" />
-                <element signature="e#849#866#0" expanded="false" />
-                <element signature="e#2026#2072#0" expanded="false" />
-                <element signature="e#6580#6658#0" expanded="false" />
-                <element signature="e#6842#6858#0" expanded="false" />
-                <element signature="e#7180#7209#0" expanded="false" />
-                <element signature="e#7611#7763#0" expanded="false" />
-                <element signature="e#7611#9252#0" expanded="false" />
-                <element signature="e#8476#8516#0" expanded="false" />
-                <element signature="e#9254#9789#0" expanded="false" />
-                <element signature="e#9791#10884#0" expanded="false" />
-                <element signature="e#10888#13322#0" expanded="false" />
-                <element signature="e#11010#11029#0" expanded="false" />
-                <element signature="e#13324#13527#0" expanded="false" />
-                <marker date="1552195267153" expanded="true" signature="13518:13527" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="run_all.sh" pinned="false" current-in-tab="true">
+      <file leaf-file-name="run_all.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../GraphDecompose/src/util/run_all.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="4" column="70" lean-forward="false" selection-start-line="4" selection-start-column="67" selection-end-line="4" selection-end-column="70" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="94" />
               <folding />
             </state>
           </provider>
@@ -248,13 +41,53 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="GraphDecompose_GraphPartition_CliqueBK.scala" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../GraphDecompose/src/main/scala/GraphDecompose_GraphPartition_CliqueBK.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1261">
+              <caret line="175" column="13" lean-forward="true" selection-start-line="175" selection-start-column="13" selection-end-line="175" selection-end-column="13" />
+              <folding>
+                <element signature="e#59#108#0" expanded="true" />
+                <element signature="e#849#866#0" expanded="false" />
+                <element signature="e#1602#1627#0" expanded="false" />
+                <element signature="e#2026#2072#0" expanded="false" />
+                <element signature="e#2525#2555#0" expanded="false" />
+                <element signature="e#3069#3118#0" expanded="false" />
+                <element signature="e#3895#3944#0" expanded="false" />
+                <element signature="e#5089#5140#0" expanded="false" />
+                <element signature="e#5480#5492#0" expanded="false" />
+                <element signature="e#6826#6837#0" expanded="false" />
+                <element signature="e#7160#7211#0" expanded="false" />
+                <element signature="e#7510#7539#0" expanded="false" />
+                <element signature="e#7941#8093#0" expanded="false" />
+                <element signature="e#7941#9582#0" expanded="false" />
+                <element signature="e#8806#8846#0" expanded="false" />
+                <element signature="e#9584#10119#0" expanded="false" />
+                <element signature="e#10121#11214#0" expanded="false" />
+                <element signature="e#11218#13652#0" expanded="false" />
+                <element signature="e#11340#11359#0" expanded="false" />
+                <element signature="e#13654#13857#0" expanded="false" />
+                <marker date="1552270717765" expanded="true" signature="13848:13857" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="LabelPropagationAlgorithm.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../GraphDecompose/src/main/scala/LabelPropagationAlgorithm.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3069">
-              <caret line="163" column="21" lean-forward="false" selection-start-line="163" selection-start-column="4" selection-end-line="163" selection-end-column="21" />
+            <state relative-caret-position="390">
+              <caret line="168" column="81" lean-forward="false" selection-start-line="168" selection-start-column="72" selection-end-line="168" selection-end-column="89" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
+                <element signature="e#57#89#0" expanded="true" />
+                <element signature="e#290#1643#0" expanded="false" />
+                <element signature="e#776#808#0" expanded="false" />
+                <element signature="e#1355#1370#0" expanded="false" />
+                <element signature="e#1647#4344#0" expanded="false" />
+                <element signature="e#4348#5504#0" expanded="false" />
+                <element signature="e#5508#7145#0" expanded="false" />
+                <element signature="e#7149#7192#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -290,9 +123,9 @@
         <option value="$PROJECT_DIR$/../GraphDecompose/src/main/scala/CliqueBK.scala" />
         <option value="$PROJECT_DIR$/../GraphDecompose/src/util/run_GraphPartition.sh" />
         <option value="$PROJECT_DIR$/../GraphDecompose/src/main/scala/Test_Case.scala" />
-        <option value="$PROJECT_DIR$/../GraphDecompose/src/main/scala/LabelPropagationAlgorithm.scala" />
         <option value="$PROJECT_DIR$/../GraphDecompose/src/util/run_GraphDecompose_GraphPartition_CliqueBK.sh" />
         <option value="$PROJECT_DIR$/../GraphDecompose/src/util/run_all.sh" />
+        <option value="$PROJECT_DIR$/../GraphDecompose/src/main/scala/LabelPropagationAlgorithm.scala" />
         <option value="$PROJECT_DIR$/../GraphDecompose/src/main/scala/GraphDecompose_GraphPartition_CliqueBK.scala" />
       </list>
     </option>
@@ -869,10 +702,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.4969743" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4304419" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -884,7 +719,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.49394855" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980332" sideWeight="0.48175183" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17397882" sideWeight="0.48175183" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22239032" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -896,7 +731,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43193278" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -924,8 +758,26 @@
           <properties />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/../GraphDecompose/src/main/scala/LabelPropagationAlgorithm.scala</url>
+          <line>50</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/../GraphDecompose/src/main/scala/GraphDecompose_GraphPartition_CliqueBK.scala</url>
+          <line>196</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/../GraphDecompose/src/main/scala/GraphDecompose_GraphPartition_CliqueBK.scala</url>
+          <line>192</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="10" />
+      <option name="time" value="14" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -955,6 +807,14 @@
           <caret line="80" column="49" lean-forward="true" selection-start-line="80" selection-start-column="49" selection-end-line="80" selection-end-column="49" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <element signature="e#57#89#0" expanded="true" />
+            <element signature="e#290#1643#0" expanded="false" />
+            <element signature="e#776#808#0" expanded="false" />
+            <element signature="e#1355#1370#0" expanded="false" />
+            <element signature="e#1647#4344#0" expanded="false" />
+            <element signature="e#4348#5504#0" expanded="false" />
+            <element signature="e#5508#7145#0" expanded="false" />
+            <element signature="e#7149#7192#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -973,19 +833,25 @@
           <folding>
             <element signature="e#59#108#0" expanded="true" />
             <element signature="e#849#866#0" expanded="false" />
+            <element signature="e#1602#1627#0" expanded="false" />
             <element signature="e#2026#2072#0" expanded="false" />
-            <element signature="e#6580#6658#0" expanded="false" />
-            <element signature="e#6842#6858#0" expanded="false" />
-            <element signature="e#7180#7209#0" expanded="false" />
-            <element signature="e#7611#7763#0" expanded="false" />
-            <element signature="e#7611#9252#0" expanded="false" />
-            <element signature="e#8476#8516#0" expanded="false" />
-            <element signature="e#9254#9789#0" expanded="false" />
-            <element signature="e#9791#10884#0" expanded="false" />
-            <element signature="e#10888#13322#0" expanded="false" />
-            <element signature="e#11010#11029#0" expanded="false" />
-            <element signature="e#13324#13527#0" expanded="false" />
-            <marker date="1552195267153" expanded="true" signature="13518:13527" ph="{...}" />
+            <element signature="e#2525#2555#0" expanded="false" />
+            <element signature="e#3069#3118#0" expanded="false" />
+            <element signature="e#3895#3944#0" expanded="false" />
+            <element signature="e#5089#5140#0" expanded="false" />
+            <element signature="e#5480#5492#0" expanded="false" />
+            <element signature="e#6826#6837#0" expanded="false" />
+            <element signature="e#7160#7211#0" expanded="false" />
+            <element signature="e#7510#7539#0" expanded="false" />
+            <element signature="e#7941#8093#0" expanded="false" />
+            <element signature="e#7941#9582#0" expanded="false" />
+            <element signature="e#8806#8846#0" expanded="false" />
+            <element signature="e#9584#10119#0" expanded="false" />
+            <element signature="e#10121#11214#0" expanded="false" />
+            <element signature="e#11218#13652#0" expanded="false" />
+            <element signature="e#11340#11359#0" expanded="false" />
+            <element signature="e#13654#13857#0" expanded="false" />
+            <marker date="1552270717765" expanded="true" signature="13848:13857" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -996,6 +862,14 @@
           <caret line="105" column="7" lean-forward="false" selection-start-line="105" selection-start-column="7" selection-end-line="105" selection-end-column="46" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <element signature="e#57#89#0" expanded="true" />
+            <element signature="e#290#1643#0" expanded="false" />
+            <element signature="e#776#808#0" expanded="false" />
+            <element signature="e#1355#1370#0" expanded="false" />
+            <element signature="e#1647#4344#0" expanded="false" />
+            <element signature="e#4348#5504#0" expanded="false" />
+            <element signature="e#5508#7145#0" expanded="false" />
+            <element signature="e#7149#7192#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1029,19 +903,25 @@
           <folding>
             <element signature="e#59#108#0" expanded="true" />
             <element signature="e#849#866#0" expanded="false" />
+            <element signature="e#1602#1627#0" expanded="false" />
             <element signature="e#2026#2072#0" expanded="false" />
-            <element signature="e#6580#6658#0" expanded="false" />
-            <element signature="e#6842#6858#0" expanded="false" />
-            <element signature="e#7180#7209#0" expanded="false" />
-            <element signature="e#7611#7763#0" expanded="false" />
-            <element signature="e#7611#9252#0" expanded="false" />
-            <element signature="e#8476#8516#0" expanded="false" />
-            <element signature="e#9254#9789#0" expanded="false" />
-            <element signature="e#9791#10884#0" expanded="false" />
-            <element signature="e#10888#13322#0" expanded="false" />
-            <element signature="e#11010#11029#0" expanded="false" />
-            <element signature="e#13324#13527#0" expanded="false" />
-            <marker date="1552195267153" expanded="true" signature="13518:13527" ph="{...}" />
+            <element signature="e#2525#2555#0" expanded="false" />
+            <element signature="e#3069#3118#0" expanded="false" />
+            <element signature="e#3895#3944#0" expanded="false" />
+            <element signature="e#5089#5140#0" expanded="false" />
+            <element signature="e#5480#5492#0" expanded="false" />
+            <element signature="e#6826#6837#0" expanded="false" />
+            <element signature="e#7160#7211#0" expanded="false" />
+            <element signature="e#7510#7539#0" expanded="false" />
+            <element signature="e#7941#8093#0" expanded="false" />
+            <element signature="e#7941#9582#0" expanded="false" />
+            <element signature="e#8806#8846#0" expanded="false" />
+            <element signature="e#9584#10119#0" expanded="false" />
+            <element signature="e#10121#11214#0" expanded="false" />
+            <element signature="e#11218#13652#0" expanded="false" />
+            <element signature="e#11340#11359#0" expanded="false" />
+            <element signature="e#13654#13857#0" expanded="false" />
+            <marker date="1552270717765" expanded="true" signature="13848:13857" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1059,6 +939,14 @@
           <caret line="70" column="13" lean-forward="false" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <element signature="e#57#89#0" expanded="true" />
+            <element signature="e#290#1643#0" expanded="false" />
+            <element signature="e#776#808#0" expanded="false" />
+            <element signature="e#1355#1370#0" expanded="false" />
+            <element signature="e#1647#4344#0" expanded="false" />
+            <element signature="e#4348#5504#0" expanded="false" />
+            <element signature="e#5508#7145#0" expanded="false" />
+            <element signature="e#7149#7192#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1305,13 +1193,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../GraphDecompose/src/main/scala/LabelPropagationAlgorithm.scala">
+    <entry file="file://$PROJECT_DIR$/../GraphDecompose/src/util/run_all.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3069">
-          <caret line="163" column="21" lean-forward="false" selection-start-line="163" selection-start-column="4" selection-end-line="163" selection-end-column="21" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="94" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1323,35 +1209,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../GraphDecompose/src/main/scala/GraphDecompose_GraphPartition_CliqueBK.scala">
+    <entry file="file://$PROJECT_DIR$/../GraphDecompose/src/main/scala/LabelPropagationAlgorithm.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="195" column="24" lean-forward="true" selection-start-line="195" selection-start-column="24" selection-end-line="195" selection-end-column="24" />
+        <state relative-caret-position="390">
+          <caret line="168" column="81" lean-forward="false" selection-start-line="168" selection-start-column="72" selection-end-line="168" selection-end-column="89" />
           <folding>
-            <element signature="e#59#108#0" expanded="true" />
-            <element signature="e#849#866#0" expanded="false" />
-            <element signature="e#2026#2072#0" expanded="false" />
-            <element signature="e#6580#6658#0" expanded="false" />
-            <element signature="e#6842#6858#0" expanded="false" />
-            <element signature="e#7180#7209#0" expanded="false" />
-            <element signature="e#7611#7763#0" expanded="false" />
-            <element signature="e#7611#9252#0" expanded="false" />
-            <element signature="e#8476#8516#0" expanded="false" />
-            <element signature="e#9254#9789#0" expanded="false" />
-            <element signature="e#9791#10884#0" expanded="false" />
-            <element signature="e#10888#13322#0" expanded="false" />
-            <element signature="e#11010#11029#0" expanded="false" />
-            <element signature="e#13324#13527#0" expanded="false" />
-            <marker date="1552195267153" expanded="true" signature="13518:13527" ph="{...}" />
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#57#89#0" expanded="true" />
+            <element signature="e#290#1643#0" expanded="false" />
+            <element signature="e#776#808#0" expanded="false" />
+            <element signature="e#1355#1370#0" expanded="false" />
+            <element signature="e#1647#4344#0" expanded="false" />
+            <element signature="e#4348#5504#0" expanded="false" />
+            <element signature="e#5508#7145#0" expanded="false" />
+            <element signature="e#7149#7192#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../GraphDecompose/src/util/run_all.sh">
+    <entry file="file://$PROJECT_DIR$/../GraphDecompose/src/main/scala/GraphDecompose_GraphPartition_CliqueBK.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="4" column="70" lean-forward="false" selection-start-line="4" selection-start-column="67" selection-end-line="4" selection-end-column="70" />
-          <folding />
+        <state relative-caret-position="1261">
+          <caret line="175" column="13" lean-forward="true" selection-start-line="175" selection-start-column="13" selection-end-line="175" selection-end-column="13" />
+          <folding>
+            <element signature="e#59#108#0" expanded="true" />
+            <element signature="e#849#866#0" expanded="false" />
+            <element signature="e#1602#1627#0" expanded="false" />
+            <element signature="e#2026#2072#0" expanded="false" />
+            <element signature="e#2525#2555#0" expanded="false" />
+            <element signature="e#3069#3118#0" expanded="false" />
+            <element signature="e#3895#3944#0" expanded="false" />
+            <element signature="e#5089#5140#0" expanded="false" />
+            <element signature="e#5480#5492#0" expanded="false" />
+            <element signature="e#6826#6837#0" expanded="false" />
+            <element signature="e#7160#7211#0" expanded="false" />
+            <element signature="e#7510#7539#0" expanded="false" />
+            <element signature="e#7941#8093#0" expanded="false" />
+            <element signature="e#7941#9582#0" expanded="false" />
+            <element signature="e#8806#8846#0" expanded="false" />
+            <element signature="e#9584#10119#0" expanded="false" />
+            <element signature="e#10121#11214#0" expanded="false" />
+            <element signature="e#11218#13652#0" expanded="false" />
+            <element signature="e#11340#11359#0" expanded="false" />
+            <element signature="e#13654#13857#0" expanded="false" />
+            <marker date="1552270717765" expanded="true" signature="13848:13857" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>

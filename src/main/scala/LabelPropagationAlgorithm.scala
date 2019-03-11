@@ -6,6 +6,7 @@ import org.apache.spark.{SparkConf, SparkContext, rdd}
 import scopt.OptionParser
 import scala.collection.mutable.Map
 import scala.util.Random
+import scala.Array._
 class LabelPropagationAlgorithm {
 
   def ComputeModularity(result:Graph[VertexId,(Double,Double)],sc:SparkContext): Double ={
@@ -61,7 +62,7 @@ class LabelPropagationAlgorithm {
     Modularity
   }
 
-  def PS_LabelPropagationAlgorithm(graph:Graph[VertexId,Int],sc:SparkContext,Iterations:Int): Double ={
+  def PS_LabelPropagationAlgorithm(graph:Graph[VertexId,Int],sc:SparkContext,Iterations:Int): Graph[VertexId,(Double,Double)] ={
     val collectNeighborIds = graph.collectNeighborIds(EdgeDirection.Either)
     val GraphDegreeNeighbor: Graph[(VertexId,Array[Long]),Int] = graph.outerJoinVertices(collectNeighborIds){
       case (vid,label,neighbor) =>  (label,neighbor.getOrElse(Array[Long]()).distinct)
@@ -125,12 +126,12 @@ class LabelPropagationAlgorithm {
       },
       (a,b) => a++b
     )
+    result
 //    result.vertices.foreach(println(_))
-    ComputeModularity(result,sc)
+//    ComputeModularity(result,sc)
   }
 
-  def LabelPropagationAlgorithm(graph:Graph[VertexId,Int],sc:SparkContext,Iterations:Int): Double ={
-
+  def LabelPropagationAlgorithm(graph:Graph[VertexId,Int],sc:SparkContext,Iterations:Int): Graph[VertexId,(Double,Double)] ={
 
     val result = graph.pregel[  Array[(VertexId)]  ](Array(-1),maxIterations = Iterations)(
       (id,Label,NewLabel) => {
@@ -160,11 +161,77 @@ class LabelPropagationAlgorithm {
       },
       (a,b) => a++b
     )
+    result.mapTriplets(triplets=>(-1.0,-1.0))
     //    result.vertices.foreach(println(_))
-    ComputeModularity(result.mapTriplets(triplets=>(-1.0,-1.0)),sc)
+//    ComputeModularity(result.mapTriplets(triplets=>(-1.0,-1.0)),sc)
   }
 
-//  def main(args: Array[String]): Unit = {
+  def ComputeNMI(result:Graph[VertexId,(Double,Double)],sc:SparkContext,realPartitionPath:String): Double ={
+    val n = result.numVertices
+
+    val algorithm_partition = result.vertices.map{
+      case (vid,label) =>
+        (label,vid)
+    }.groupByKey().mapValues(_.toList).collect()
+    val CB = algorithm_partition.size //算法划分类别
+    val real_partiton = sc.textFile(real_partition_path).map{
+      x=>
+        val arr = x.split("\\s+")
+        val vid = arr(0).toLong
+        val label = arr(1).toLong
+        (label,vid)
+    }.groupByKey().mapValues(_.toList).collect()
+    val CA = real_partiton.size
+    var N = ofDim[Int](CA,CB)
+
+
+    for(i <- 0 until(CA)){
+      for (j <- 0 until(CB)){
+        N(i)(j) = (real_partiton(i)._2).intersect(algorithm_partition(j)._2).size
+      }
+    }
+    var partA = 0.0
+    var partB = 0.0
+    var partC = 0.0
+
+    for(i <- 0 until(CA)) {
+      val i_row_sum = N(i).sum
+      partB += (i_row_sum)*math.log(  (i_row_sum+0.0)/n   )
+
+    }
+    for (j <- 0 until (CB)) {
+
+      val j_col_sum = {
+        var temp = 0
+        for(k <- 0 until(CA)){
+          temp = temp + N(k)(j)
+        }
+        temp
+      }//第j列求和
+      partC+= (j_col_sum)*math.log(   (j_col_sum+0.0)/n  )
+    }
+
+    for(i <- 0 until(CA)) {
+      for (j <- 0 until (CB)) {
+
+        val i_row_sum = N(i).sum
+        val j_col_sum = {
+          var temp = 0
+          for(k <- 0 until(CA)){
+            temp = temp + N(k)(j)
+          }
+          temp
+        }//第j列求和
+
+        partA+= (if (N(i)(j)==0) 0 else N(i)(j)*math.log(   (N(i)(j)*n+0.0)/(i_row_sum*j_col_sum)  ))
+      }
+    }
+
+    val NMI = partA/(partB+partC)
+    NMI
+  }
+
+  //  def main(args: Array[String]): Unit = {
 //
 //    val conf = new SparkConf().setAppName("LPA").setMaster("local")
 //    val sc = new SparkContext(conf)
