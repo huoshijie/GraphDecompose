@@ -227,7 +227,7 @@ class LabelPropagationAlgorithm {
       }
     }
 
-    val NMI = partA/(partB+partC)
+    val NMI = -2*partA/(partB+partC)
     NMI
   }
 
