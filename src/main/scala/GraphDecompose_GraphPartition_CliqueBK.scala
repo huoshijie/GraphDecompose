@@ -220,11 +220,11 @@ object GraphDecompose_GraphPartition_CliqueBK {
     val LSCNCDS = ListBuffer[Double]()
     while(index<=parm.index){
 //            println(index,LPA.PS_LabelPropagationAlgorithm(graph_simple,sc,index))
-            val SLPAResult = LPA.LabelPropagationAlgorithm(graph_simple,sc,iteration)
+            val SLPAResult = LPA.LabelPropagationAlgorithm(graph_simple,sc,parm.iteration)
             val SLPANMI = LPA.ComputeNMI(SLPAResult,sc,parm.realPartitionPath)
             SLPA.append(SLPANMI)//原始异步LPA算法
 
-            val PSLPAResult = LPA.PS_LabelPropagationAlgorithm(graph_simple,sc,iteration)
+            val PSLPAResult = LPA.PS_LabelPropagationAlgorithm(graph_simple,sc,parm.iteration)
             val PSLPANMI = LPA.ComputeNMI(PSLPAResult,sc,parm.realPartitionPath)
             PSLPA.append(PSLPANMI)//未加入团的异步LPA改进算法
 
