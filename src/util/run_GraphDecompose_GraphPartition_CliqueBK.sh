@@ -11,8 +11,8 @@ index=$4
 echo "DataSet-----${DataSet}"
 echo "outDir-----${outDir}"
 
-in_put_dir="hdfs://10.1.14.20:9000/graph/${DataSet}"
-
+in_put_dir="hdfs://10.1.14.20:9000/graph/SmallData/${DataSet}/network.txt"
+real_partition_path="hdfs://10.1.14.20:9000/graph/SmallData/${DataSet}/community.txt"
 out_put_dir="hdfs://10.1.14.20:9000/graph/output/${outDir}"
 
 glb_jar="./target/GraphDecompose-1.0-SNAPSHOT-jar-with-dependencies.jar"
@@ -29,7 +29,8 @@ glb_jar="./target/GraphDecompose-1.0-SNAPSHOT-jar-with-dependencies.jar"
                     --in_put_dir "${in_put_dir}" \
                     --out_put_dir "${out_put_dir}" \
                     --iteration $iteration \
-                    --index $index
+                    --index $index \
+                    --real_partition_path $real_partition_path
 
 if [ $? -ne 0 ]; then
     exit 1
