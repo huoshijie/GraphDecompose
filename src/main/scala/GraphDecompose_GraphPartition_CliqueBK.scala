@@ -178,41 +178,69 @@ object GraphDecompose_GraphPartition_CliqueBK {
 //        println("-------------")
     var iteration = 1
     println(parm.inPutDir+"数据集------------------------")
-    while(iteration <=parm.iteration){
-      var index = 1
-      val PSLPA = ListBuffer[Double]()
-      val SLPA = ListBuffer[Double]()
-      val LSCNCDS = ListBuffer[Double]()
-      while(index<=parm.index){
-        //      println(index,LPA.PS_LabelPropagationAlgorithm(graph_simple,sc,index))
-//        val result = LPA.LabelPropagationAlgorithm(graph_simple,sc,iteration)
+//    while(iteration <=parm.iteration){
+//      var index = 1
+//      val PSLPA = ListBuffer[Double]()
+//      val SLPA = ListBuffer[Double]()
+//      val LSCNCDS = ListBuffer[Double]()
+//      while(index<=parm.index){
+//
+//        //      println(index,LPA.PS_LabelPropagationAlgorithm(graph_simple,sc,index))
+////        val result = LPA.LabelPropagationAlgorithm(graph_simple,sc,iteration)
+////        val modularity = LPA.ComputeModularity(result,sc)
+////        SLPA.append(modularity)//原始异步LPA算法
+//
+////        val result = LPA.PS_LabelPropagationAlgorithm(graph_simple,sc,iteration)
+////        val modularity = LPA.ComputeModularity(result,sc)
+////        PSLPA.append(modularity)//未加入团的异步LPA改进算法
+//        val result = LPA.PS_LabelPropagationAlgorithm(graph_with_clique,sc,iteration)
 //        val modularity = LPA.ComputeModularity(result,sc)
-//        SLPA.append(modularity)//原始异步LPA算法
-//        val result = LPA.PS_LabelPropagationAlgorithm(graph_simple,sc,iteration)
-//        val modularity = LPA.ComputeModularity(result,sc)
-//        PSLPA.append(modularity)//未加入团的异步LPA改进算法
-        val result = LPA.PS_LabelPropagationAlgorithm(graph_with_clique,sc,iteration)
-        val modularity = LPA.ComputeModularity(result,sc)
-        LSCNCDS.append(modularity)
-        index+=1
-      }
-//      println(s"PSLPA：-------${iteration}地迭代的结果")
-//      println("最小:",PSLPA.min)
-//      println("最大:",PSLPA.max)
-//      println("平均",PSLPA.sum/PSLPA.size)
-
-//      println(s"SLPA：-------${iteration}地迭代的结果")
-//      println("最小:",SLPA.min)
-//      println("最大:",SLPA.max)
-//      println("平均",SLPA.sum/SLPA.size)
+//        LSCNCDS.append(modularity)
+//        index+=1
+//      }
+////      println(s"PSLPA：-------${iteration}地迭代的结果")
+////      println("最小:",PSLPA.min)
+////      println("最大:",PSLPA.max)
+////      println("平均",PSLPA.sum/PSLPA.size)
+//
+////      println(s"SLPA：-------${iteration}地迭代的结果")
+////      println("最小:",SLPA.min)
+////      println("最大:",SLPA.max)
+////      println("平均",SLPA.sum/SLPA.size)
+////      iteration+=1
+//      println(s"LSCNCDS：-------${iteration}地迭代的结果")
+//      println("最小:",LSCNCDS.min)
+//      println("最大:",LSCNCDS.max)
+//      println("平均",LSCNCDS.sum/LSCNCDS.size)
 //      iteration+=1
-      println(s"LSCNCDS：-------${iteration}地迭代的结果")
-      println("最小:",LSCNCDS.min)
-      println("最大:",LSCNCDS.max)
-      println("平均",LSCNCDS.sum/LSCNCDS.size)
-      iteration+=1
+//    }
+    var index = 1
+    val PSLPA = ListBuffer[Double]()
+    val SLPA = ListBuffer[Double]()
+    val LSCNCDS = ListBuffer[Double]()
+    while(index<=parm.index){
+//            println(index,LPA.PS_LabelPropagationAlgorithm(graph_simple,sc,index))
+            val SLPAResult = LPA.LabelPropagationAlgorithm(graph_simple,sc,iteration)
+            val SLPANMI = LPA.ComputeNMI(SLPAResult,sc,parm.realPartitionPath)
+            SLPA.append(SLPANMI)//原始异步LPA算法
+
+            val PSLPAResult = LPA.PS_LabelPropagationAlgorithm(graph_simple,sc,iteration)
+            val PSLPANMI = LPA.ComputeNMI(PSLPAResult,sc,parm.realPartitionPath)
+            PSLPA.append(PSLPANMI)//未加入团的异步LPA改进算法
+
+            val LSCNCDSResult = LPA.PS_LabelPropagationAlgorithm(graph_with_clique,sc,parm.iteration)
+            val LSCNCDSNMI = LPA.ComputeNMI(LSCNCDSResult,sc,parm.realPartitionPath)
+            LSCNCDS.append(LSCNCDSNMI)
+            index+=1
     }
-    println()
+
+    println(s"SLPA：-------${parm.iteration}地迭代的结果:平均值为"+SLPA.sum/SLPA.size)
+    println(s"PSLPA：-------${parm.iteration}地迭代的结果:平均值为"+PSLPA.sum/PSLPA.size)
+    println(s"LSCNCDS：-------${parm.iteration}地迭代的结果:平均值为"+LSCNCDS.sum/LSCNCDS.size)
+//          println("最小:",PSLPA.min)
+//          println("最大:",PSLPA.max)
+
+     println()
 
 
 //    println("SLPA：-------")

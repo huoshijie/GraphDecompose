@@ -33,7 +33,7 @@
       <file leaf-file-name="run_GraphDecompose_GraphPartition_CliqueBK.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../GraphDecompose/src/util/run_GraphDecompose_GraphPartition_CliqueBK.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
+            <state relative-caret-position="825">
               <caret line="25" column="52" lean-forward="false" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
               <folding />
             </state>
@@ -43,31 +43,25 @@
       <file leaf-file-name="GraphDecompose_GraphPartition_CliqueBK.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../GraphDecompose/src/main/scala/GraphDecompose_GraphPartition_CliqueBK.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-302">
-              <caret line="180" column="36" lean-forward="false" selection-start-line="180" selection-start-column="27" selection-end-line="180" selection-end-column="36" />
+            <state relative-caret-position="140">
+              <caret line="231" column="26" lean-forward="false" selection-start-line="231" selection-start-column="16" selection-end-line="231" selection-end-column="26" />
               <folding>
                 <element signature="e#59#108#0" expanded="true" />
                 <element signature="e#849#866#0" expanded="false" />
-                <element signature="e#1602#1627#0" expanded="false" />
                 <element signature="e#2026#2072#0" expanded="false" />
-                <element signature="e#2525#2555#0" expanded="false" />
-                <element signature="e#3069#3118#0" expanded="false" />
                 <element signature="e#3895#3944#0" expanded="false" />
-                <element signature="e#5089#5140#0" expanded="false" />
                 <element signature="e#5480#5492#0" expanded="false" />
-                <element signature="e#6577#6655#0" expanded="false" />
-                <element signature="e#6841#6923#0" expanded="false" />
-                <element signature="e#7239#7290#0" expanded="false" />
-                <element signature="e#7782#7811#0" expanded="false" />
-                <element signature="e#8213#8365#0" expanded="false" />
-                <element signature="e#8213#9854#0" expanded="false" />
-                <element signature="e#9078#9118#0" expanded="false" />
-                <element signature="e#9856#10391#0" expanded="false" />
-                <element signature="e#10393#11486#0" expanded="false" />
-                <element signature="e#11490#13924#0" expanded="false" />
-                <element signature="e#11612#11631#0" expanded="false" />
-                <element signature="e#13926#14129#0" expanded="false" />
-                <marker date="1552289081538" expanded="true" signature="14120:14129" ph="{...}" />
+                <element signature="e#6360#6400#0" expanded="false" />
+                <element signature="e#9104#9133#0" expanded="false" />
+                <element signature="e#9535#9687#0" expanded="false" />
+                <element signature="e#9535#11176#0" expanded="false" />
+                <element signature="e#10400#10440#0" expanded="false" />
+                <element signature="e#11178#11713#0" expanded="false" />
+                <element signature="e#11715#12808#0" expanded="false" />
+                <element signature="e#12812#15246#0" expanded="false" />
+                <element signature="e#12934#12953#0" expanded="false" />
+                <element signature="e#15248#15451#0" expanded="false" />
+                <marker date="1552370879160" expanded="true" signature="15442:15451" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -76,8 +70,8 @@
       <file leaf-file-name="LabelPropagationAlgorithm.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../GraphDecompose/src/main/scala/LabelPropagationAlgorithm.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1040">
-              <caret line="172" column="25" lean-forward="true" selection-start-line="172" selection-start-column="25" selection-end-line="172" selection-end-column="25" />
+            <state relative-caret-position="246">
+              <caret line="171" column="36" lean-forward="false" selection-start-line="171" selection-start-column="30" selection-end-line="171" selection-end-column="36" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#57#89#0" expanded="true" />
@@ -191,8 +185,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -297,7 +292,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -704,7 +698,6 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32733223" sideWeight="0.4969743" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4304419" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -716,8 +709,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.49394855" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.48175183" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10438729" sideWeight="0.48175183" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22239032" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -728,7 +720,9 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4304419" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -760,12 +754,6 @@
           <line>50</line>
           <properties />
           <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/../GraphDecompose/src/main/scala/GraphDecompose_GraphPartition_CliqueBK.scala</url>
-          <line>192</line>
-          <properties />
-          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="14" />
@@ -821,26 +809,20 @@
           <folding>
             <element signature="e#59#108#0" expanded="true" />
             <element signature="e#849#866#0" expanded="false" />
-            <element signature="e#1602#1627#0" expanded="false" />
             <element signature="e#2026#2072#0" expanded="false" />
-            <element signature="e#2525#2555#0" expanded="false" />
-            <element signature="e#3069#3118#0" expanded="false" />
             <element signature="e#3895#3944#0" expanded="false" />
-            <element signature="e#5089#5140#0" expanded="false" />
             <element signature="e#5480#5492#0" expanded="false" />
-            <element signature="e#6577#6655#0" expanded="false" />
-            <element signature="e#6841#6923#0" expanded="false" />
-            <element signature="e#7239#7290#0" expanded="false" />
-            <element signature="e#7782#7811#0" expanded="false" />
-            <element signature="e#8213#8365#0" expanded="false" />
-            <element signature="e#8213#9854#0" expanded="false" />
-            <element signature="e#9078#9118#0" expanded="false" />
-            <element signature="e#9856#10391#0" expanded="false" />
-            <element signature="e#10393#11486#0" expanded="false" />
-            <element signature="e#11490#13924#0" expanded="false" />
-            <element signature="e#11612#11631#0" expanded="false" />
-            <element signature="e#13926#14129#0" expanded="false" />
-            <marker date="1552289081538" expanded="true" signature="14120:14129" ph="{...}" />
+            <element signature="e#6360#6400#0" expanded="false" />
+            <element signature="e#9104#9133#0" expanded="false" />
+            <element signature="e#9535#9687#0" expanded="false" />
+            <element signature="e#9535#11176#0" expanded="false" />
+            <element signature="e#10400#10440#0" expanded="false" />
+            <element signature="e#11178#11713#0" expanded="false" />
+            <element signature="e#11715#12808#0" expanded="false" />
+            <element signature="e#12812#15246#0" expanded="false" />
+            <element signature="e#12934#12953#0" expanded="false" />
+            <element signature="e#15248#15451#0" expanded="false" />
+            <marker date="1552370879160" expanded="true" signature="15442:15451" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -871,7 +853,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4059">
           <caret line="123" column="38" lean-forward="false" selection-start-line="123" selection-start-column="38" selection-end-line="123" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -889,26 +870,20 @@
           <folding>
             <element signature="e#59#108#0" expanded="true" />
             <element signature="e#849#866#0" expanded="false" />
-            <element signature="e#1602#1627#0" expanded="false" />
             <element signature="e#2026#2072#0" expanded="false" />
-            <element signature="e#2525#2555#0" expanded="false" />
-            <element signature="e#3069#3118#0" expanded="false" />
             <element signature="e#3895#3944#0" expanded="false" />
-            <element signature="e#5089#5140#0" expanded="false" />
             <element signature="e#5480#5492#0" expanded="false" />
-            <element signature="e#6577#6655#0" expanded="false" />
-            <element signature="e#6841#6923#0" expanded="false" />
-            <element signature="e#7239#7290#0" expanded="false" />
-            <element signature="e#7782#7811#0" expanded="false" />
-            <element signature="e#8213#8365#0" expanded="false" />
-            <element signature="e#8213#9854#0" expanded="false" />
-            <element signature="e#9078#9118#0" expanded="false" />
-            <element signature="e#9856#10391#0" expanded="false" />
-            <element signature="e#10393#11486#0" expanded="false" />
-            <element signature="e#11490#13924#0" expanded="false" />
-            <element signature="e#11612#11631#0" expanded="false" />
-            <element signature="e#13926#14129#0" expanded="false" />
-            <marker date="1552289081538" expanded="true" signature="14120:14129" ph="{...}" />
+            <element signature="e#6360#6400#0" expanded="false" />
+            <element signature="e#9104#9133#0" expanded="false" />
+            <element signature="e#9535#9687#0" expanded="false" />
+            <element signature="e#9535#11176#0" expanded="false" />
+            <element signature="e#10400#10440#0" expanded="false" />
+            <element signature="e#11178#11713#0" expanded="false" />
+            <element signature="e#11715#12808#0" expanded="false" />
+            <element signature="e#12812#15246#0" expanded="false" />
+            <element signature="e#12934#12953#0" expanded="false" />
+            <element signature="e#15248#15451#0" expanded="false" />
+            <marker date="1552370879160" expanded="true" signature="15442:15451" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -968,7 +943,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1004,7 +978,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1028,7 +1001,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="474">
           <caret line="123" column="38" lean-forward="false" selection-start-line="123" selection-start-column="38" selection-end-line="123" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1100,10 +1072,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="11352">
           <caret line="364" column="9" lean-forward="false" selection-start-line="364" selection-start-column="6" selection-end-line="364" selection-end-column="11" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="e#835#864#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1111,7 +1079,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1133,7 +1100,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1141,7 +1107,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1149,7 +1114,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1157,7 +1121,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1165,7 +1128,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1173,7 +1135,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="858">
           <caret line="44" column="27" lean-forward="false" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1187,7 +1148,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../GraphDecompose/src/util/run_GraphDecompose_GraphPartition_CliqueBK.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
+        <state relative-caret-position="825">
           <caret line="25" column="52" lean-forward="false" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
           <folding />
         </state>
@@ -1195,8 +1156,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../GraphDecompose/src/main/scala/LabelPropagationAlgorithm.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1040">
-          <caret line="172" column="25" lean-forward="true" selection-start-line="172" selection-start-column="25" selection-end-line="172" selection-end-column="25" />
+        <state relative-caret-position="246">
+          <caret line="171" column="36" lean-forward="false" selection-start-line="171" selection-start-column="30" selection-end-line="171" selection-end-column="36" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#57#89#0" expanded="true" />
@@ -1210,31 +1171,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../GraphDecompose/src/main/scala/GraphDecompose_GraphPartition_CliqueBK.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-302">
-          <caret line="180" column="36" lean-forward="false" selection-start-line="180" selection-start-column="27" selection-end-line="180" selection-end-column="36" />
+        <state relative-caret-position="140">
+          <caret line="231" column="26" lean-forward="false" selection-start-line="231" selection-start-column="16" selection-end-line="231" selection-end-column="26" />
           <folding>
             <element signature="e#59#108#0" expanded="true" />
             <element signature="e#849#866#0" expanded="false" />
-            <element signature="e#1602#1627#0" expanded="false" />
             <element signature="e#2026#2072#0" expanded="false" />
-            <element signature="e#2525#2555#0" expanded="false" />
-            <element signature="e#3069#3118#0" expanded="false" />
             <element signature="e#3895#3944#0" expanded="false" />
-            <element signature="e#5089#5140#0" expanded="false" />
             <element signature="e#5480#5492#0" expanded="false" />
-            <element signature="e#6577#6655#0" expanded="false" />
-            <element signature="e#6841#6923#0" expanded="false" />
-            <element signature="e#7239#7290#0" expanded="false" />
-            <element signature="e#7782#7811#0" expanded="false" />
-            <element signature="e#8213#8365#0" expanded="false" />
-            <element signature="e#8213#9854#0" expanded="false" />
-            <element signature="e#9078#9118#0" expanded="false" />
-            <element signature="e#9856#10391#0" expanded="false" />
-            <element signature="e#10393#11486#0" expanded="false" />
-            <element signature="e#11490#13924#0" expanded="false" />
-            <element signature="e#11612#11631#0" expanded="false" />
-            <element signature="e#13926#14129#0" expanded="false" />
-            <marker date="1552289081538" expanded="true" signature="14120:14129" ph="{...}" />
+            <element signature="e#6360#6400#0" expanded="false" />
+            <element signature="e#9104#9133#0" expanded="false" />
+            <element signature="e#9535#9687#0" expanded="false" />
+            <element signature="e#9535#11176#0" expanded="false" />
+            <element signature="e#10400#10440#0" expanded="false" />
+            <element signature="e#11178#11713#0" expanded="false" />
+            <element signature="e#11715#12808#0" expanded="false" />
+            <element signature="e#12812#15246#0" expanded="false" />
+            <element signature="e#12934#12953#0" expanded="false" />
+            <element signature="e#15248#15451#0" expanded="false" />
+            <marker date="1552370879160" expanded="true" signature="15442:15451" ph="{...}" />
           </folding>
         </state>
       </provider>
