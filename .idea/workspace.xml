@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="52f356ff-5e87-4d4e-a243-8fce26405952" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../GraphDecompose/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/src/main/scala/LabelPropagationAlgorithm.scala" afterPath="$PROJECT_DIR$/../GraphDecompose/src/main/scala/LabelPropagationAlgorithm.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/src/util/run_GraphDecompose_GraphPartition_CliqueBK.sh" afterPath="$PROJECT_DIR$/../GraphDecompose/src/util/run_GraphDecompose_GraphPartition_CliqueBK.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/src/util/run_all.sh" afterPath="$PROJECT_DIR$/../GraphDecompose/src/util/run_all.sh" />
     </list>
     <ignored path="$PROJECT_DIR$/../GraphDecompose/out/" />
     <ignored path="$PROJECT_DIR$/../GraphDecompose/target/" />
@@ -21,11 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="run_all.sh" pinned="false" current-in-tab="false">
+      <file leaf-file-name="run_all.sh" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../GraphDecompose/src/util/run_all.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="3" column="91" lean-forward="false" selection-start-line="3" selection-start-column="91" selection-end-line="3" selection-end-column="91" />
+            <state relative-caret-position="356">
+              <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -68,11 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LabelPropagationAlgorithm.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LabelPropagationAlgorithm.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../GraphDecompose/src/main/scala/LabelPropagationAlgorithm.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="229" column="17" lean-forward="false" selection-start-line="229" selection-start-column="17" selection-end-line="229" selection-end-column="17" />
+            <state relative-caret-position="771">
+              <caret line="231" column="3" lean-forward="true" selection-start-line="231" selection-start-column="3" selection-end-line="231" selection-end-column="3" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#57#89#0" expanded="true" />
@@ -115,10 +114,10 @@
         <option value="$PROJECT_DIR$/../GraphDecompose/src/main/scala/CliqueBK.scala" />
         <option value="$PROJECT_DIR$/../GraphDecompose/src/util/run_GraphPartition.sh" />
         <option value="$PROJECT_DIR$/../GraphDecompose/src/main/scala/Test_Case.scala" />
-        <option value="$PROJECT_DIR$/../GraphDecompose/src/util/run_all.sh" />
         <option value="$PROJECT_DIR$/../GraphDecompose/src/main/scala/GraphDecompose_GraphPartition_CliqueBK.scala" />
         <option value="$PROJECT_DIR$/../GraphDecompose/src/util/run_GraphDecompose_GraphPartition_CliqueBK.sh" />
         <option value="$PROJECT_DIR$/../GraphDecompose/src/main/scala/LabelPropagationAlgorithm.scala" />
+        <option value="$PROJECT_DIR$/../GraphDecompose/src/util/run_all.sh" />
       </list>
     </option>
   </component>
@@ -1139,22 +1138,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../GraphDecompose/src/util/run_all.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="3" column="91" lean-forward="false" selection-start-line="3" selection-start-column="91" selection-end-line="3" selection-end-column="91" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../GraphDecompose/src/util/run_GraphDecompose_GraphPartition_CliqueBK.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../GraphDecompose/src/main/scala/GraphDecompose_GraphPartition_CliqueBK.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1182,8 +1165,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../GraphDecompose/src/main/scala/LabelPropagationAlgorithm.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="229" column="17" lean-forward="false" selection-start-line="229" selection-start-column="17" selection-end-line="229" selection-end-column="17" />
+        <state relative-caret-position="771">
+          <caret line="231" column="3" lean-forward="true" selection-start-line="231" selection-start-column="3" selection-end-line="231" selection-end-column="3" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#57#89#0" expanded="true" />
@@ -1192,6 +1175,22 @@
             <element signature="e#1355#1370#0" expanded="false" />
             <element signature="e#1647#4344#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../GraphDecompose/src/util/run_GraphDecompose_GraphPartition_CliqueBK.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../GraphDecompose/src/util/run_all.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
