@@ -11,8 +11,8 @@ index=$4
 echo "DataSet-----${DataSet}"
 echo "outDir-----${outDir}"
 
-in_put_dir="hdfs://10.1.14.20:9000/graph/SmallData/${DataSet}/network.txt"
-real_partition_path="hdfs://10.1.14.20:9000/graph/SmallData/${DataSet}/community.txt"
+in_put_dir="hdfs://10.1.14.20:9000/graph/SmallData/${DataSet}/network.dat"
+real_partition_path="hdfs://10.1.14.20:9000/graph/SmallData/${DataSet}/community.dat"
 
 out_put_dir="hdfs://10.1.14.20:9000/graph/output/${outDir}"
 
