@@ -10,6 +10,7 @@
 !
 
 thesold=0.8
+interval=0.05
 for i in 2000S 2000B 5000S 5000B
 do
     scale=$i
@@ -17,7 +18,7 @@ do
     while [ `expr $mu \<= $thesold` -eq 1 ]
     do
         ./src/util/run_GraphDecompose_GraphPartition_CliqueBK.sh $scale/u$mu output 10 20
-        mu=`expr $mu + 0.05`
+        mu=`expr $mu + $interval`
 #        mu=$[$mu+0.05]
     done
 done
