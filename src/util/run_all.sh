@@ -12,7 +12,8 @@
 thesold=0.8
 for i in 1 2 3 4
 do
-    scale=${$i}
+
+    scale=$$i
     mu=0.1
     while [ `expr $mu \<= $thesold` -eq 1 ]
     do
