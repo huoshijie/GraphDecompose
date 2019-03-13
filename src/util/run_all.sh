@@ -9,12 +9,12 @@
 ./src/util/run_GraphDecompose_GraphPartition_CliqueBK.sh SmallData/PGP.txt output 30 20
 !
 
-
+thesold=0.8
 for i in 1 2 3 4
 do
     scale=$i
     mu=0.1
-    while [ $mu -le 0.8 ]
+    while [ `expr $mu \<= $thesold` -eq 1 ]
     do
         ./src/util/run_GraphDecompose_GraphPartition_CliqueBK.sh $scale/u$mu output 10 20
         mu=$[$mu+0.05]
