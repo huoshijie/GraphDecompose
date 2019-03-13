@@ -17,7 +17,8 @@ do
     while [ `expr $mu \<= $thesold` -eq 1 ]
     do
         ./src/util/run_GraphDecompose_GraphPartition_CliqueBK.sh $scale/u$mu output 10 20
-        mu=$[$mu+0.05]
+        mu=`expr $mu + 0.05`
+#        mu=$[$mu+0.05]
     done
 done
 
