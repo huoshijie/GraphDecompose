@@ -16,7 +16,7 @@ do
     mu=0.1
     while [ $mu -le 0.8 ]
     do
-        ./src/util/run_GraphDecompose_GraphPartition_CliqueBK.sh SmallData/$scale/u$mu/network.txt output 10 20
+        ./src/util/run_GraphDecompose_GraphPartition_CliqueBK.sh $scale/u$mu output 10 20
         mu=$[$mu+0.05]
     done
 done
