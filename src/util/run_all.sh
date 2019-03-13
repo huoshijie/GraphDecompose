@@ -10,10 +10,9 @@
 !
 
 thesold=0.8
-for i in 1 2 3 4
+for i in 2000S 2000B 5000S 5000B
 do
-
-    scale=$$i
+    scale=$i
     mu=0.1
     while [ `expr $mu \<= $thesold` -eq 1 ]
     do
