@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="52f356ff-5e87-4d4e-a243-8fce26405952" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/src/util/run_all.sh" afterPath="$PROJECT_DIR$/../GraphDecompose/src/util/run_all.sh" />
-    </list>
+    <list default="true" id="52f356ff-5e87-4d4e-a243-8fce26405952" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/../GraphDecompose/out/" />
     <ignored path="$PROJECT_DIR$/../GraphDecompose/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -695,7 +693,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
