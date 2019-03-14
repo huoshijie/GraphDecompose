@@ -232,17 +232,17 @@ object GraphDecompose_GraphPartition_CliqueBK {
             println(PSLPANMI)
 
             PSLPA.append(PSLPANMI)//未加入团的异步LPA改进算法
-            val LSCNCDSResult = LPA.PS_LabelPropagationAlgorithm(graph_with_clique,sc,parm.iteration)
-            val LSCNCDSNMI = LPA.ComputeNMI(LSCNCDSResult,sc,parm.realPartitionPath)
-            println(LSCNCDSNMI)
-
-            LSCNCDS.append(LSCNCDSNMI)
+//            val LSCNCDSResult = LPA.PS_LabelPropagationAlgorithm(graph_with_clique,sc,parm.iteration)
+//            val LSCNCDSNMI = LPA.ComputeNMI(LSCNCDSResult,sc,parm.realPartitionPath)
+//            println(LSCNCDSNMI)
+//
+//            LSCNCDS.append(LSCNCDSNMI)
             index+=1
     }
 
     println(s"SLPA：-------${parm.iteration}地迭代的结果:平均值为"+SLPA.sum/SLPA.size)
     println(s"PSLPA：-------${parm.iteration}地迭代的结果:平均值为"+PSLPA.sum/PSLPA.size)
-    println(s"LSCNCDS：-------${parm.iteration}地迭代的结果:平均值为"+LSCNCDS.sum/LSCNCDS.size)
+//    println(s"LSCNCDS：-------${parm.iteration}地迭代的结果:平均值为"+LSCNCDS.sum/LSCNCDS.size)
 //          println("最小:",PSLPA.min)
 //          println("最大:",PSLPA.max)
 
