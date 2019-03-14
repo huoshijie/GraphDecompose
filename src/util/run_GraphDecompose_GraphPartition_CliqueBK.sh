@@ -19,7 +19,7 @@ out_put_dir="hdfs://10.1.14.20:9000/graph/output/${outDir}"
 glb_jar="./target/GraphDecompose-1.0-SNAPSHOT-jar-with-dependencies.jar"
 
 /home/hadoop/program/spark-2.0.0-bin-hadoop2.4/bin/spark-submit  \
-                    --driver-memory 10g \
+                    --driver-memory 50g \
                     --executor-memory 25g \
                     --num-executors 5 \
                     --conf "spark.yarn.executor.memoryOverhead=3g" \
