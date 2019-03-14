@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="52f356ff-5e87-4d4e-a243-8fce26405952" name="Default" comment="" />
+    <list default="true" id="52f356ff-5e87-4d4e-a243-8fce26405952" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../GraphDecompose/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/src/main/scala/GraphDecompose_GraphPartition_CliqueBK.scala" afterPath="$PROJECT_DIR$/../GraphDecompose/src/main/scala/GraphDecompose_GraphPartition_CliqueBK.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GraphDecompose/src/util/run_all.sh" afterPath="$PROJECT_DIR$/../GraphDecompose/src/util/run_all.sh" />
+    </list>
     <ignored path="$PROJECT_DIR$/../GraphDecompose/out/" />
     <ignored path="$PROJECT_DIR$/../GraphDecompose/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="run_all.sh" pinned="false" current-in-tab="true">
+      <file leaf-file-name="run_all.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../GraphDecompose/src/util/run_all.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="297">
-              <caret line="18" column="88" lean-forward="false" selection-start-line="18" selection-start-column="88" selection-end-line="18" selection-end-column="88" />
+              <caret line="18" column="88" lean-forward="false" selection-start-line="18" selection-start-column="86" selection-end-line="18" selection-end-column="88" />
               <folding />
             </state>
           </provider>
@@ -30,18 +34,18 @@
       <file leaf-file-name="run_GraphDecompose_GraphPartition_CliqueBK.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../GraphDecompose/src/util/run_GraphDecompose_GraphPartition_CliqueBK.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-264">
+            <state relative-caret-position="87">
               <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GraphDecompose_GraphPartition_CliqueBK.scala" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GraphDecompose_GraphPartition_CliqueBK.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../GraphDecompose/src/main/scala/GraphDecompose_GraphPartition_CliqueBK.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="639">
-              <caret line="245" column="5" lean-forward="false" selection-start-line="245" selection-start-column="5" selection-end-line="245" selection-end-column="5" />
+            <state relative-caret-position="-86">
+              <caret line="221" column="29" lean-forward="true" selection-start-line="221" selection-start-column="29" selection-end-line="221" selection-end-column="29" />
               <folding>
                 <element signature="e#59#108#0" expanded="true" />
                 <element signature="e#849#866#0" expanded="false" />
@@ -53,16 +57,17 @@
                 <element signature="e#5089#5140#0" expanded="false" />
                 <element signature="e#5480#5492#0" expanded="false" />
                 <element signature="e#6369#6409#0" expanded="false" />
-                <element signature="e#8580#8596#0" expanded="false" />
-                <element signature="e#9228#9257#0" expanded="false" />
-                <element signature="e#9659#9811#0" expanded="false" />
-                <element signature="e#9659#11300#0" expanded="false" />
-                <element signature="e#10524#10564#0" expanded="false" />
-                <element signature="e#11839#12932#0" expanded="false" />
-                <element signature="e#12936#15370#0" expanded="false" />
-                <element signature="e#13058#13077#0" expanded="false" />
-                <element signature="e#15372#15575#0" expanded="false" />
-                <marker date="1552528400922" expanded="true" signature="15566:15575" ph="{...}" />
+                <element signature="e#8584#8600#0" expanded="false" />
+                <element signature="e#9053#9139#0" expanded="false" />
+                <element signature="e#9232#9261#0" expanded="false" />
+                <element signature="e#9663#9815#0" expanded="false" />
+                <element signature="e#9663#11304#0" expanded="false" />
+                <element signature="e#10528#10568#0" expanded="false" />
+                <element signature="e#11843#12936#0" expanded="false" />
+                <element signature="e#12940#15374#0" expanded="false" />
+                <element signature="e#13062#13081#0" expanded="false" />
+                <element signature="e#15376#15579#0" expanded="false" />
+                <marker date="1552530158639" expanded="true" signature="15570:15579" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -117,8 +122,8 @@
         <option value="$PROJECT_DIR$/../GraphDecompose/src/main/scala/Test_Case.scala" />
         <option value="$PROJECT_DIR$/../GraphDecompose/src/main/scala/LabelPropagationAlgorithm.scala" />
         <option value="$PROJECT_DIR$/../GraphDecompose/src/util/run_GraphDecompose_GraphPartition_CliqueBK.sh" />
-        <option value="$PROJECT_DIR$/../GraphDecompose/src/main/scala/GraphDecompose_GraphPartition_CliqueBK.scala" />
         <option value="$PROJECT_DIR$/../GraphDecompose/src/util/run_all.sh" />
+        <option value="$PROJECT_DIR$/../GraphDecompose/src/main/scala/GraphDecompose_GraphPartition_CliqueBK.scala" />
       </list>
     </option>
   </component>
@@ -693,7 +698,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="1" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -818,16 +823,17 @@
             <element signature="e#5089#5140#0" expanded="false" />
             <element signature="e#5480#5492#0" expanded="false" />
             <element signature="e#6369#6409#0" expanded="false" />
-            <element signature="e#8580#8596#0" expanded="false" />
-            <element signature="e#9228#9257#0" expanded="false" />
-            <element signature="e#9659#9811#0" expanded="false" />
-            <element signature="e#9659#11300#0" expanded="false" />
-            <element signature="e#10524#10564#0" expanded="false" />
-            <element signature="e#11839#12932#0" expanded="false" />
-            <element signature="e#12936#15370#0" expanded="false" />
-            <element signature="e#13058#13077#0" expanded="false" />
-            <element signature="e#15372#15575#0" expanded="false" />
-            <marker date="1552528400922" expanded="true" signature="15566:15575" ph="{...}" />
+            <element signature="e#8584#8600#0" expanded="false" />
+            <element signature="e#9053#9139#0" expanded="false" />
+            <element signature="e#9232#9261#0" expanded="false" />
+            <element signature="e#9663#9815#0" expanded="false" />
+            <element signature="e#9663#11304#0" expanded="false" />
+            <element signature="e#10528#10568#0" expanded="false" />
+            <element signature="e#11843#12936#0" expanded="false" />
+            <element signature="e#12940#15374#0" expanded="false" />
+            <element signature="e#13062#13081#0" expanded="false" />
+            <element signature="e#15376#15579#0" expanded="false" />
+            <marker date="1552530158639" expanded="true" signature="15570:15579" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -883,16 +889,17 @@
             <element signature="e#5089#5140#0" expanded="false" />
             <element signature="e#5480#5492#0" expanded="false" />
             <element signature="e#6369#6409#0" expanded="false" />
-            <element signature="e#8580#8596#0" expanded="false" />
-            <element signature="e#9228#9257#0" expanded="false" />
-            <element signature="e#9659#9811#0" expanded="false" />
-            <element signature="e#9659#11300#0" expanded="false" />
-            <element signature="e#10524#10564#0" expanded="false" />
-            <element signature="e#11839#12932#0" expanded="false" />
-            <element signature="e#12936#15370#0" expanded="false" />
-            <element signature="e#13058#13077#0" expanded="false" />
-            <element signature="e#15372#15575#0" expanded="false" />
-            <marker date="1552528400922" expanded="true" signature="15566:15575" ph="{...}" />
+            <element signature="e#8584#8600#0" expanded="false" />
+            <element signature="e#9053#9139#0" expanded="false" />
+            <element signature="e#9232#9261#0" expanded="false" />
+            <element signature="e#9663#9815#0" expanded="false" />
+            <element signature="e#9663#11304#0" expanded="false" />
+            <element signature="e#10528#10568#0" expanded="false" />
+            <element signature="e#11843#12936#0" expanded="false" />
+            <element signature="e#12940#15374#0" expanded="false" />
+            <element signature="e#13062#13081#0" expanded="false" />
+            <element signature="e#15376#15579#0" expanded="false" />
+            <marker date="1552530158639" expanded="true" signature="15570:15579" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1162,10 +1169,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../GraphDecompose/src/util/run_all.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="18" column="88" lean-forward="false" selection-start-line="18" selection-start-column="86" selection-end-line="18" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../GraphDecompose/src/util/run_GraphDecompose_GraphPartition_CliqueBK.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../GraphDecompose/src/main/scala/GraphDecompose_GraphPartition_CliqueBK.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="639">
-          <caret line="245" column="5" lean-forward="false" selection-start-line="245" selection-start-column="5" selection-end-line="245" selection-end-column="5" />
+        <state relative-caret-position="-86">
+          <caret line="221" column="29" lean-forward="true" selection-start-line="221" selection-start-column="29" selection-end-line="221" selection-end-column="29" />
           <folding>
             <element signature="e#59#108#0" expanded="true" />
             <element signature="e#849#866#0" expanded="false" />
@@ -1177,33 +1200,18 @@
             <element signature="e#5089#5140#0" expanded="false" />
             <element signature="e#5480#5492#0" expanded="false" />
             <element signature="e#6369#6409#0" expanded="false" />
-            <element signature="e#8580#8596#0" expanded="false" />
-            <element signature="e#9228#9257#0" expanded="false" />
-            <element signature="e#9659#9811#0" expanded="false" />
-            <element signature="e#9659#11300#0" expanded="false" />
-            <element signature="e#10524#10564#0" expanded="false" />
-            <element signature="e#11839#12932#0" expanded="false" />
-            <element signature="e#12936#15370#0" expanded="false" />
-            <element signature="e#13058#13077#0" expanded="false" />
-            <element signature="e#15372#15575#0" expanded="false" />
-            <marker date="1552528400922" expanded="true" signature="15566:15575" ph="{...}" />
+            <element signature="e#8584#8600#0" expanded="false" />
+            <element signature="e#9053#9139#0" expanded="false" />
+            <element signature="e#9232#9261#0" expanded="false" />
+            <element signature="e#9663#9815#0" expanded="false" />
+            <element signature="e#9663#11304#0" expanded="false" />
+            <element signature="e#10528#10568#0" expanded="false" />
+            <element signature="e#11843#12936#0" expanded="false" />
+            <element signature="e#12940#15374#0" expanded="false" />
+            <element signature="e#13062#13081#0" expanded="false" />
+            <element signature="e#15376#15579#0" expanded="false" />
+            <marker date="1552530158639" expanded="true" signature="15570:15579" ph="{...}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../GraphDecompose/src/util/run_GraphDecompose_GraphPartition_CliqueBK.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-264">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../GraphDecompose/src/util/run_all.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="18" column="88" lean-forward="false" selection-start-line="18" selection-start-column="88" selection-end-line="18" selection-end-column="88" />
-          <folding />
         </state>
       </provider>
     </entry>

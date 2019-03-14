@@ -224,12 +224,12 @@ object GraphDecompose_GraphPartition_CliqueBK {
             val SLPAResult = LPA.LabelPropagationAlgorithm(graph_simple,sc,parm.iteration)
             val SLPANMI = LPA.ComputeNMI(SLPAResult,sc,parm.realPartitionPath)
 
-            println(SLPANMI)
+//            println(SLPANMI)
             SLPA.append(SLPANMI)//原始异步LPA算法
 
             val PSLPAResult = LPA.PS_LabelPropagationAlgorithm(graph_simple,sc,parm.iteration)
             val PSLPANMI = LPA.ComputeNMI(PSLPAResult,sc,parm.realPartitionPath)
-            println(PSLPANMI)
+//            println(PSLPANMI)
 
             PSLPA.append(PSLPANMI)//未加入团的异步LPA改进算法
 //            val LSCNCDSResult = LPA.PS_LabelPropagationAlgorithm(graph_with_clique,sc,parm.iteration)
